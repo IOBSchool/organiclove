@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>売れない原因は、10問で分かる｜ドイツIOBオーガニックスクール</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f9f7ef;--surface:#fff;--surface-soft:#f2ede0;
+  --ink:#553727;--ink-soft:#85634b;--ink-faint:#a68b73;
+  --accent:#f26b3b;--border:rgba(85,55,39,.16);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:2;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+.site-head{padding:26px 0 0}
+.site-head img{width:132px;margin:0 auto}
+
+.hero{padding:44px 0 40px;text-align:center;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;color:var(--ink-faint);margin:0 0 16px;line-height:1.8}
+.hero h1{font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:clamp(23px,5.4vw,30px);line-height:1.65;margin:0;text-wrap:balance}
+.hero .subtitle{margin:16px 0 0;font-size:14.5px;color:var(--ink-soft)}
+.hero p.lead{margin:22px 0 0;font-size:14.5px;color:var(--ink-soft);text-align:left}
+
+section{padding:52px 0}
+section+section{border-top:1px solid var(--border)}
+h2.sec{font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:clamp(20px,4.4vw,24px);line-height:1.7;margin:0 0 8px}
+.sub{font-size:13.5px;color:var(--ink-faint);margin:0 0 30px}
+p{margin:0 0 20px;font-size:15.5px}
+p:last-child{margin-bottom:0}
+.soft{color:var(--ink-soft)}
+
+/* 診断カード */
+.qcard{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:30px 24px;scroll-margin-top:20px}
+.progressbar{height:4px;background:var(--surface-soft);border-radius:2px;margin:0 0 26px;overflow:hidden}
+.progressfill{height:100%;background:var(--accent);width:0%;transition:width .3s ease}
+.qscreen{display:none}
+.qscreen.active{display:block}
+.qno{font-size:11.5px;letter-spacing:.14em;color:var(--accent);margin:0 0 14px}
+.qtext{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:18px;line-height:1.75;margin:0 0 26px}
+.startscreen p{font-size:14.5px;color:var(--ink-soft)}
+.startbtn,.btn{display:block;width:100%;background:var(--accent);color:#fff;text-decoration:none;
+  font-family:inherit;font-size:15.5px;font-weight:500;padding:18px;border-radius:6px;text-align:center;
+  border:none;cursor:pointer;line-height:1.5;appearance:none}
+.startbtn{margin-top:8px}
+
+.branchgrid{display:grid;gap:12px}
+.branchcard{display:block;width:100%;text-align:left;background:var(--surface-soft);
+  border:1px solid var(--border);border-radius:8px;padding:20px 18px;cursor:pointer;
+  font-family:inherit;color:var(--ink)}
+.branchcard:hover{border-color:var(--accent)}
+.bctitle{display:block;font-family:"Zen Old Mincho",serif;font-size:16.5px;margin:0 0 6px;line-height:1.6}
+.bcdesc{display:block;font-size:13px;color:var(--ink-soft);line-height:1.8}
+
+.scale,.choicecol{display:grid;gap:10px}
+.scalebtn,.choicebtn{display:block;width:100%;text-align:left;background:var(--surface);
+  border:1px solid var(--border);border-radius:8px;padding:16px 18px;cursor:pointer;
+  font-family:inherit;font-size:14.5px;color:var(--ink);line-height:1.7}
+.scalebtn:hover,.choicebtn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* 結果 */
+.resultcard{background:var(--surface-soft);border:1px solid var(--border);border-radius:8px;
+  padding:24px 20px;margin:0 0 22px}
+.resulteyebrow{font-size:11.5px;letter-spacing:.14em;color:var(--ink-faint);margin:0 0 10px}
+.resulttitle{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:20px;margin:0 0 18px;line-height:1.6}
+.resultlabel{font-size:12px;letter-spacing:.1em;color:var(--accent);margin:0 0 8px}
+.resultaction{font-size:14.5px;color:var(--ink-soft);margin:0}
+.nextstep{margin:0 0 40px}
+.nextstep p{font-size:14.5px;color:var(--ink-soft)}
+
+.divides{margin:0}
+.divide-item{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--border)}
+.divide-item:first-child{border-top:none}
+.divide-num{flex:none;width:30px;height:30px;border-radius:50%;background:var(--surface-soft);
+  color:var(--accent);font-family:"Zen Old Mincho",serif;font-size:13px;
+  display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
+.divide-item.key .divide-num{background:var(--accent);color:#fff;border-color:var(--accent)}
+.divide-body h4{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:15.5px;margin:0 0 6px;line-height:1.6}
+.divide-body p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.85}
+
+.rule{text-align:center;color:var(--ink-faint);font-size:13px;letter-spacing:.3em;margin:0 0 30px}
+.closing{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:26px 22px}
+.closing p{font-size:14.5px;color:var(--ink-soft)}
+.back{display:inline-block;margin-top:6px;color:var(--accent);font-size:13.5px;text-decoration:none}
+
+footer{padding:44px 0 56px;text-align:center;font-size:11.5px;color:var(--ink-faint);line-height:2}
+footer img{width:104px;margin:0 auto 18px;opacity:.9}
+footer a{color:var(--ink-faint)}
+@media(min-width:700px){
+  section{padding:72px 0}
+  .branchgrid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap"><img src="../images/logo_orange.png" alt="Institut für Organic Business"></div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <p class="eyebrow">FREE MATERIAL ・ 🔍 診断</p>
+    <h1>売れない原因は、10問で分かる</h1>
+    <p class="subtitle soft">オーガニックビジネス 詰まりどころ診断(10問・3分)</p>
+    <p class="lead">これは、欠点を探すテストではありません。今、あなたの事業の中で、力を入れると一番変わる場所を1つだけ見つけるための10問です。答え終えると、今日から始められる小さな一手と、専門性が仕事に変わっていく人に共通する7つの分かれ目をお渡しします。</p>
+  </div>
+
+  <section id="why">
+    <p class="eyebrow">なぜ、1か所だけなのか</p>
+    <h2 class="sec">全部を直そうとすると、何も変わらない</h2>
+    <p>事業には、いくつもの気になる場所があります。でも、全部を同時に直そうとすると、力が分散して、結局どこも変わらないまま時間だけが過ぎていきます。</p>
+    <p class="soft">今、いちばん力を入れると変わる場所は、たいてい1つだけです。そこにだけ集中する。この診断は、その1か所を見つけるためのものです。</p>
+  </section>
+
+  <section id="quiz">
+    <p class="eyebrow">診断</p>
+    <h2 class="sec" id="quiz-anchor">ここから始めます</h2>
+    <p class="sub">10問・3分ほどで終わります</p>
+
+    <div class="qcard">
+      <div class="progressbar"><div class="progressfill" id="progressfill"></div></div>
+
+      <div class="qscreen active startscreen" id="s-intro">
+        <p>普段、お客様とどちらの形で出会うことが多いかによって、質問が少し変わります。思ったとおりに、直感で答えて大丈夫です。</p>
+        <button class="startbtn" id="btn-start">はじめる</button>
+      </div>
+
+      <div class="qscreen" id="s-branch">
+        <p class="qno">Q1 / 10</p>
+        <h3 class="qtext">お客様と、どちらの形で出会うことが多いですか？</h3>
+        <div class="branchgrid">
+          <button class="branchcard" data-branch="store">
+            <span class="bctitle">店頭・対面で会う仕事</span>
+            <span class="bcdesc">店舗、サロン、教室、飲食店など</span>
+          </button>
+          <button class="branchcard" data-branch="content">
+            <span class="bctitle">発信して、そこから声がかかる仕事</span>
+            <span class="bcdesc">SNS、note、メルマガなどでの発信が入り口</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 店舗型 8問 -->
+      <div class="qscreen stageq" data-branch="store" data-stage="awareness" id="s-store-awareness-1">
+        <p class="qno"></p>
+        <h3 class="qtext">新しいお客様から「こんな店(商品)があるって知らなかった」と言われることがある</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="awareness" id="s-store-awareness-2">
+        <p class="qno"></p>
+        <h3 class="qtext">今来てくれているのと、同じような人としか、まだ出会えていない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="visit" id="s-store-visit-1">
+        <p class="qno"></p>
+        <h3 class="qtext">「気になってたんです」と言われるのに、実際に来てくれるまで時間がかかる人が多い</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="visit" id="s-store-visit-2">
+        <p class="qno"></p>
+        <h3 class="qtext">知っているはずの人が、なかなか一歩を踏み出してくれない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="purchase" id="s-store-purchase-1">
+        <p class="qno"></p>
+        <h3 class="qtext">「良いのは分かるけど、高い」と言われて、そこで会話が終わってしまうことが多い</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="purchase" id="s-store-purchase-2">
+        <p class="qno"></p>
+        <h3 class="qtext">説明すればするほど、お客様が黙って離れていく感覚がある</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="repeat" id="s-store-repeat-1">
+        <p class="qno"></p>
+        <h3 class="qtext">一度買ってくれた人が、次も選んでくれるかどうかは「運」だと感じる</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="store" data-stage="repeat" id="s-store-repeat-2">
+        <p class="qno"></p>
+        <h3 class="qtext">常連さんが増えているという実感が、あまりない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+
+      <!-- 発信型 8問 -->
+      <div class="qscreen stageq" data-branch="content" data-stage="post" id="s-content-post-1">
+        <p class="qno"></p>
+        <h3 class="qtext">投稿しても「誰にも見られていない」感覚が続いている</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="post" id="s-content-post-2">
+        <p class="qno"></p>
+        <h3 class="qtext">続けているのに、見てくれる人がなかなか増えない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="list" id="s-content-list-1">
+        <p class="qno"></p>
+        <h3 class="qtext">フォローはされていても、LINEやメルマガに登録してくれる人はほとんどいない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="list" id="s-content-list-2">
+        <p class="qno"></p>
+        <h3 class="qtext">「いいね」はつくのに、コメントやDMでの反応がほとんどない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="consult" id="s-content-consult-1">
+        <p class="qno"></p>
+        <h3 class="qtext">発信を見た人から、直接「相談したい」という声がほとんど来ない</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="consult" id="s-content-consult-2">
+        <p class="qno"></p>
+        <h3 class="qtext">やりとりが、お問い合わせの手前で止まってしまうことが多い</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="close" id="s-content-close-1">
+        <p class="qno"></p>
+        <h3 class="qtext">相談や体験には来てくれるのに、そこから契約・購入に進まないことが多い</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+      <div class="qscreen stageq" data-branch="content" data-stage="close" id="s-content-close-2">
+        <p class="qno"></p>
+        <h3 class="qtext">「検討します」と言われたあと、そのまま連絡が途絶えることが多い</h3>
+        <div class="scale">
+          <button class="scalebtn" data-val="2">とても当てはまる</button>
+          <button class="scalebtn" data-val="1">少し当てはまる</button>
+          <button class="scalebtn" data-val="0">あまり当てはまらない</button>
+        </div>
+      </div>
+
+      <div class="qscreen" id="s-support">
+        <p class="qno">Q10 / 10</p>
+        <h3 class="qtext">今、オーガニックの仕事について、すでに受けているサポートはありますか？</h3>
+        <div class="choicecol">
+          <button class="choicebtn" data-support="none">まだ何も受けていない</button>
+          <button class="choicebtn" data-support="partial">補助金・助成金の支援など、部分的なサポートだけ受けている(または他で学んでいる)</button>
+          <button class="choicebtn" data-support="enrolled">IOBの講座を受講中、または受講を検討している</button>
+        </div>
+      </div>
+
+      <div class="qscreen" id="s-result">
+        <div id="result-personal"></div>
+
+        <p class="eyebrow">1,100人を見てきて分かったこと</p>
+        <h2 class="sec" style="margin-bottom:22px">専門性が仕事に変わる人の、7つの分かれ目</h2>
+        <div class="divides">
+          <div class="divide-item">
+            <span class="divide-num">1</span>
+            <div class="divide-body">
+              <h4>好きの大きさ</h4>
+              <p>趣味で終わる人ほど、途中から「誰かの目」や「誰かのため」が先に立っています。100%自分が楽しんでいるかどうか。そこが最初の分かれ目です。</p>
+            </div>
+          </div>
+          <div class="divide-item">
+            <span class="divide-num">2</span>
+            <div class="divide-body">
+              <h4>1年後も、その顔をしているか</h4>
+              <p>かっこいいから、誰かがやっているから、で始めた人は早い段階で分かります。逆に、疲れていても楽しそうな顔をしている人は続きます。</p>
+            </div>
+          </div>
+          <div class="divide-item">
+            <span class="divide-num">3</span>
+            <div class="divide-body">
+              <h4>感情が動いても、手を止めない</h4>
+              <p>辛い、悔しいという感情は誰にでもあります。そこで文句を言って離れるか、それでも積み上げ続けるかで結果が変わります。後から始めても、続けられれば追いつけます。</p>
+            </div>
+          </div>
+          <div class="divide-item">
+            <span class="divide-num">4</span>
+            <div class="divide-body">
+              <h4>学んだら、すぐやってみる</h4>
+              <p>インプットだけで終わらせず、同時にアウトプットする。情報にもスマホにも気を取られやすい今だからこそ、すぐ試す人だけが積み上がっていきます。</p>
+            </div>
+          </div>
+          <div class="divide-item">
+            <span class="divide-num">5</span>
+            <div class="divide-body">
+              <h4>自分の値段に、自分で許可を出す</h4>
+              <p>自分が作ったものの価値を、いちばんよく分かっているのは自分のはずです。それでも値段の前で手が止まるのは、たいてい自分の価値をまだ自分で理解できていないだけです。</p>
+            </div>
+          </div>
+          <div class="divide-item">
+            <span class="divide-num">6</span>
+            <div class="divide-body">
+              <h4>怖さを、わくわくが超えているか</h4>
+              <p>発信は、常に人からどう見られるかにさらされる場所です。怖さや疲れがなくなることはありません。それでも続けられる人は、「これを届けたい」という気持ちが、その怖さを上回っている人です。</p>
+            </div>
+          </div>
+          <div class="divide-item key">
+            <span class="divide-num">7</span>
+            <div class="divide-body">
+              <h4>この中で1つだけ選ぶなら</h4>
+              <p>怖さを超えるわくわくがあるかどうか。他の6つが揃っていても、これがなければ専門性は仕事に変わりません。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="closing">
+    <p class="eyebrow">最後に</p>
+    <div class="closing">
+      <p>見つけた1か所は、今日すぐに全部変えなくても大丈夫です。まずは、今日の一手だけを試してみてください。</p>
+      <a class="back" href="./">← 教材ページに戻る</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <img src="../images/logo_orange.png" alt="Institut für Organic Business">
+    <div><a href="https://iob.bio/">ドイツIOBオーガニックスクール</a></div>
+    <div id="cr"></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('cr').textContent =
+  '© ' + new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',year:'numeric'}).format(new Date())
+  + ' Institut für Organic Business GmbH. All Rights Reserved.';
+
+(function(){
+  var TIMEREX_URL = 'https://timerex.net/s/organiclifeingermany_ae43/3ddc8b58/';
+
+  var RESULTS = {
+    store: {
+      awareness: {title:'知られる場所', action:'今日、来てくれた1人にだけ「どうやってこのお店(商品)を知りましたか?」と聞いてみてください。答えが偏っていたら、そこが今の唯一の入口です。まずはそれを知ることから。'},
+      visit:     {title:'足を運んでもらう場所', action:'一番目立つ場所(入口・SNSのトップ)に、「今日、ここで何が起きているか」を1行だけ足してみてください。知っているだけでは、足は止まりません。'},
+      purchase:  {title:'選んでもらう場所', action:'「高いですね」と言われたときに返している言葉を、今日1回だけ変えてみてください。値段の前に、何と比べられているかを一言添えるだけで変わります。'},
+      repeat:    {title:'また来てもらう場所', action:'今日買ってくれた人に、次に来る理由を1つだけ渡してみてください。「また来てくださいね」ではなく、次の入荷日や、次に試してほしいものを1つ伝えるだけで変わります。'}
+    },
+    content: {
+      post:    {title:'見てもらう場所', action:'次の1投稿だけ、伝える相手を1人に決めて書いてみてください。全員に向けた言葉は、誰にも届きません。'},
+      list:    {title:'つながりを深める場所', action:'次の投稿の最後に、「もっと知りたい方はここへ」を1つだけ置いてみてください。フォローだけでは、あとで声をかけられません。'},
+      consult: {title:'声をかけてもらう場所', action:'直近の投稿を1つ選んで、「これを読んでどう思ったか、コメントで教えてください」と聞いてみてください。反応は、声をかけてもらう入口になります。'},
+      close:   {title:'決めてもらう場所', action:'直近で「検討します」と言われた人に、今日1件だけ連絡してみてください。理由を聞くだけでいい。'}
+    }
+  };
+
+  var STAGE_ORDER = {
+    store:   ['awareness','visit','purchase','repeat'],
+    content: ['post','list','consult','close']
+  };
+
+  var SUPPORT_TEXT = {
+    none:     function(t){ return 'まずは、今日見つけた「'+t+'」だけを、誰かに話してみませんか。オーガニック未来設計セッションは、その1か所だけを一緒に見る、無料の時間です。'; },
+    partial:  function(t){ return '今、受けているサポートを変える必要はありません。今日見つけた「'+t+'」だけを、オーガニック未来設計セッションで一緒に見てみませんか。'; },
+    enrolled: function(t){ return '今日見つけた「'+t+'」を、次に話す機会があれば、そのまま持っていってください。もし今すぐ話したい場合は、オーガニック未来設計セッションという無料の時間もあります。'; }
+  };
+
+  var state = { branch:null, support:null, scores:{} };
+  var flow = ['s-intro','s-branch'];
+  var pos = 0;
+
+  function screens(){ return document.querySelectorAll('.qscreen'); }
+  function anchor(){ document.getElementById('quiz-anchor').scrollIntoView({behavior:'smooth', block:'start'}); }
+
+  function updateProgress(){
+    var qIndex = flow.indexOf(flow[pos]);
+    var total = 10;
+    var current = 0;
+    if(flow[pos] === 's-intro'){ current = 0; }
+    else if(flow[pos] === 's-branch'){ current = 1; }
+    else if(flow[pos] === 's-support'){ current = 10; }
+    else if(flow[pos] === 's-result'){ current = 10; }
+    else { current = pos; } // stage question screens: pos already = 1(branch)+n
+    document.getElementById('progressfill').style.width = Math.round((current/total)*100) + '%';
+  }
+
+  function showCurrent(){
+    var list = screens();
+    for(var i=0;i<list.length;i++){ list[i].classList.remove('active'); }
+    var el = document.getElementById(flow[pos]);
+    el.classList.add('active');
+    if(el.classList.contains('stageq')){
+      var qEl = el.querySelector('.qno');
+      if(qEl) qEl.textContent = 'Q' + pos + ' / 10';
+    }
+    updateProgress();
+    if(pos > 0) anchor();
+  }
+
+  function goNext(){ pos++; showCurrent(); }
+
+  document.getElementById('btn-start').addEventListener('click', goNext);
+
+  var branchBtns = document.querySelectorAll('.branchcard');
+  for(var b=0;b<branchBtns.length;b++){
+    branchBtns[b].addEventListener('click', function(e){
+      var branch = e.currentTarget.getAttribute('data-branch');
+      state.branch = branch;
+      var stageIds = [];
+      var order = STAGE_ORDER[branch];
+      for(var s=0;s<order.length;s++){
+        stageIds.push('s-'+branch+'-'+order[s]+'-1');
+        stageIds.push('s-'+branch+'-'+order[s]+'-2');
+      }
+      flow = ['s-intro','s-branch'].concat(stageIds, ['s-support','s-result']);
+      goNext();
+    });
+  }
+
+  var scaleBtns = document.querySelectorAll('.scalebtn');
+  for(var sc=0;sc<scaleBtns.length;sc++){
+    scaleBtns[sc].addEventListener('click', function(e){
+      var val = parseInt(e.currentTarget.getAttribute('data-val'), 10);
+      var screenEl = e.currentTarget.closest('.stageq');
+      var stage = screenEl.getAttribute('data-stage');
+      state.scores[stage] = (state.scores[stage] || 0) + val;
+      goNext();
+    });
+  }
+
+  var choiceBtns = document.querySelectorAll('.choicebtn');
+  for(var c=0;c<choiceBtns.length;c++){
+    choiceBtns[c].addEventListener('click', function(e){
+      state.support = e.currentTarget.getAttribute('data-support');
+      renderResult();
+      goNext();
+    });
+  }
+
+  function topStage(){
+    var order = STAGE_ORDER[state.branch];
+    var best = order[0], bestScore = -1;
+    for(var i=0;i<order.length;i++){
+      var sc = state.scores[order[i]] || 0;
+      if(sc > bestScore){ bestScore = sc; best = order[i]; }
+    }
+    return best;
+  }
+
+  function renderResult(){
+    var stage = topStage();
+    var spot = RESULTS[state.branch][stage];
+    var nextText = SUPPORT_TEXT[state.support](spot.title);
+    document.getElementById('quiz-anchor').textContent = '結果が出ました';
+    document.getElementById('result-personal').innerHTML =
+      '<p class="eyebrow">診断結果</p>' +
+      '<h2 class="sec">今、いちばん伸びる場所は</h2>' +
+      '<div class="resultcard">' +
+        '<p class="resulteyebrow">' + escapeHtml(state.branch === 'store' ? '店頭・対面で会う仕事' : '発信して、そこから声がかかる仕事') + '</p>' +
+        '<h3 class="resulttitle">' + escapeHtml(spot.title) + '</h3>' +
+        '<p class="resultlabel">今日の一手</p>' +
+        '<p class="resultaction">' + escapeHtml(spot.action) + '</p>' +
+      '</div>' +
+      '<div class="nextstep">' +
+        '<p>' + escapeHtml(nextText) + '</p>' +
+        '<a class="btn" href="' + TIMEREX_URL + '" target="_blank" rel="noopener">オーガニック未来設計セッションについて見てみる</a>' +
+      '</div>';
+  }
+
+  function escapeHtml(str){
+    return String(str)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+})();
+</script>
+</body>
+</html>

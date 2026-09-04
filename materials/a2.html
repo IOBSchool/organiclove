@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>「あなたから買いたい」と言われる一言の、見つけ方｜ドイツIOBオーガニックスクール</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f9f7ef;--surface:#fff;--surface-soft:#f2ede0;
+  --ink:#553727;--ink-soft:#85634b;--ink-faint:#a68b73;
+  --accent:#f26b3b;--border:rgba(85,55,39,.16);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:2;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+.site-head{padding:26px 0 0}
+.site-head img{width:132px;margin:0 auto}
+
+.hero{padding:44px 0 40px;text-align:center;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;color:var(--ink-faint);margin:0 0 16px;line-height:1.8}
+.hero h1{font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:clamp(23px,5.4vw,30px);line-height:1.65;margin:0;text-wrap:balance}
+.hero .subtitle{margin:16px 0 0;font-size:14.5px;color:var(--ink-soft)}
+.hero p.lead{margin:22px 0 0;font-size:14.5px;color:var(--ink-soft);text-align:left}
+
+section{padding:52px 0}
+section+section{border-top:1px solid var(--border)}
+h2.sec{font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:clamp(20px,4.4vw,24px);line-height:1.7;margin:0 0 8px}
+.sub{font-size:13.5px;color:var(--ink-faint);margin:0 0 30px}
+p{margin:0 0 20px;font-size:15.5px}
+p:last-child{margin-bottom:0}
+.soft{color:var(--ink-soft)}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:step}
+ol.steps li{counter-increment:step;position:relative;padding:0 0 26px 44px;margin:0}
+ol.steps li:last-child{padding-bottom:0}
+ol.steps li::before{content:counter(step);position:absolute;left:0;top:0;
+  width:28px;height:28px;border-radius:50%;background:var(--surface-soft);
+  color:var(--accent);font-family:"Zen Old Mincho",serif;font-size:13px;
+  display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
+ol.steps h3{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:16px;margin:0 0 6px;line-height:1.6}
+ol.steps .time{color:var(--ink-faint);font-size:12.5px}
+ol.steps p{font-size:14.5px;color:var(--ink-soft);margin:8px 0 0}
+
+/* 記入シート */
+.sheetbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 22px;flex-wrap:wrap}
+.printbtn{appearance:none;border:1px solid var(--border);background:var(--surface);
+  color:var(--ink);font-family:inherit;font-size:13.5px;padding:10px 18px;border-radius:20px;
+  cursor:pointer}
+.printbtn:hover{border-color:var(--accent);color:var(--accent)}
+.sheet{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:30px 24px}
+.sheet-head{text-align:center;margin:0 0 26px;padding:0 0 22px;border-bottom:1px solid var(--border)}
+.sheet-head .label{font-size:11px;letter-spacing:.18em;color:var(--ink-faint);margin:0 0 10px}
+.sheet-head h3{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:18px;margin:0;line-height:1.6}
+.sheet-block{margin:0 0 30px}
+.sheet-block:last-child{margin-bottom:0}
+.sheet-block h4{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:15px;margin:0 0 4px}
+.sheet-block .hint{font-size:12.5px;color:var(--ink-faint);margin:0 0 14px}
+.words{display:grid;gap:10px}
+.fill-line{border-bottom:1px solid var(--border);min-height:30px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.col{padding:14px}
+.col+.col{border-left:1px solid var(--border)}
+.col-h{font-size:12.5px;color:var(--ink-soft);margin:0 0 12px;line-height:1.6}
+.row3{display:grid;gap:26px;padding-top:6px}
+.row3 .fill-line{min-height:26px}
+.answerbox{border:1px solid var(--border);border-radius:8px;padding:18px 16px;background:var(--surface-soft)}
+.answerbox .tmpl{font-family:"Zen Old Mincho",serif;font-size:15px;color:var(--ink-soft);margin:0 0 12px;line-height:1.8}
+.answerbox .fill-line{border-bottom:1px solid var(--ink-faint);min-height:32px}
+
+/* AIプロンプト */
+.promptcard{background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:20px 20px 18px;margin:0 0 16px}
+.promptcard:last-child{margin-bottom:0}
+.promptcard .ph{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 6px}
+.promptcard h3{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:15.5px;margin:0;line-height:1.6}
+.promptcard .when{font-size:12px;color:var(--ink-faint);margin:0 0 14px}
+.promptcard pre{white-space:pre-wrap;word-break:break-word;font-family:"Noto Sans JP",sans-serif;
+  font-size:13.5px;line-height:1.9;background:var(--surface-soft);border-radius:6px;
+  padding:14px 16px;margin:0 0 12px;color:var(--ink)}
+.copybtn{appearance:none;border:1px solid var(--border);background:transparent;color:var(--ink-soft);
+  font-family:inherit;font-size:12.5px;padding:7px 14px;border-radius:16px;cursor:pointer}
+.copybtn:hover{border-color:var(--accent);color:var(--accent)}
+.copybtn.done{color:var(--accent);border-color:var(--accent)}
+
+/* 記入例 */
+.example{background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:20px 20px;margin:0 0 16px}
+.example:last-child{margin-bottom:0}
+.example .tag{display:inline-block;font-size:11.5px;letter-spacing:.1em;color:var(--accent);
+  border:1px solid var(--accent);border-radius:12px;padding:3px 12px;margin:0 0 12px}
+.example .said{font-family:"Zen Old Mincho",serif;font-size:15.5px;margin:0 0 14px;line-height:1.8}
+.example dl{margin:0}
+.example dt{font-size:12px;color:var(--ink-faint);margin:0 0 3px}
+.example dd{margin:0 0 12px;font-size:14px;color:var(--ink-soft);line-height:1.8}
+.example dd:last-child{margin-bottom:0}
+.example .oneline{background:var(--surface-soft);border-radius:6px;padding:14px 14px;
+  font-size:14.5px;line-height:1.85}
+
+.rule{text-align:center;color:var(--ink-faint);font-size:13px;letter-spacing:.3em;margin:0 0 30px}
+
+.closing{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:26px 22px}
+.closing p{font-size:14.5px;color:var(--ink-soft)}
+.back{display:inline-block;margin-top:6px;color:var(--accent);font-size:13.5px;text-decoration:none}
+
+footer{padding:44px 0 56px;text-align:center;font-size:11.5px;color:var(--ink-faint);line-height:2}
+footer img{width:104px;margin:0 auto 18px;opacity:.9}
+footer a{color:var(--ink-faint)}
+@media(min-width:700px){
+  section{padding:72px 0}
+  .row3{grid-template-columns:1fr 1fr}
+}
+
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none}
+  .site-head,footer,.noprint,
+  #why,#how,#ai,#examples,#closing{display:none}
+  .hero{display:none}
+  section{padding:0;border:none}
+  #sheet{padding:0}
+  .sheetbar{display:none}
+  .sheet{border:none;padding:0}
+  .sheet-head{border-bottom:2px solid var(--ink)}
+  @page{size:A4;margin:16mm}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head noprint">
+  <div class="wrap"><img src="../images/logo_orange.png" alt="Institut für Organic Business"></div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <p class="eyebrow noprint">FREE MATERIAL ・ ✏️ 書き込むもの</p>
+    <h1>「あなたから買いたい」と<br>言われる一言の、見つけ方</h1>
+    <p class="subtitle soft">2列書き出すだけ。30分で、自分の言葉が1本できるシート</p>
+    <p class="lead">扱っているものには自信がある。なのに、伝えると「高い」「うちはいいです」で終わってしまう。そんなとき、多くの人が「伝え方が下手だから」と思って、言葉を足したり、写真を変えたりします。<br>でも実は、直す場所はそこではないことがほとんどです。このシートは、2つの列を書き出すだけで、その「本当に直す場所」を見つけるためのものです。</p>
+  </div>
+
+  <section id="why">
+    <p class="eyebrow">なぜ、2列に分けるのか</p>
+    <h2 class="sec">お客様が思っている原因と、本当の原因は、たいてい違う</h2>
+    <p>お客様から「高いですね」と言われたとき、多くの人はその言葉をそのまま受け取って、値段の話だと思ってしまいます。でも、お客様自身も、自分がなぜ迷っているのか、正確には分かっていないことのほうが多いのです。</p>
+    <p class="soft">値段を下げても、写真をきれいにしても伝わらないのは、直しているのがそもそも違う場所だからです。お客様が「原因はこれだ」と思っていることと、あなたが仕事として知っている「本当の原因」を、別々に書き出してみる。その2つを並べたときにできるズレ――そこにしか、あなたにしか言えない一言はありません。</p>
+    <p class="soft">誰かの真似をした言葉ではなく、自分の現場でしか出てこない言葉。それを探すための30分です。</p>
+  </section>
+
+  <section id="how">
+    <p class="eyebrow">書き方</p>
+    <h2 class="sec">4つのステップ・30分</h2>
+    <p class="sub">下のシートに、そのまま書き込んでいけます</p>
+    <ol class="steps">
+      <li>
+        <span class="time">5分</span>
+        <h3>最近、実際に言われた言葉を3つ書き出す</h3>
+        <p>「高いですね」「うちはいいです」「もう少し考えます」など。お客様や生徒さんから、この1〜2ヶ月で実際に言われた言葉をそのまま書きます。思いついたものでOKです。</p>
+      </li>
+      <li>
+        <span class="time">10分</span>
+        <h3>お客様は、原因を何だと思っているか書く</h3>
+        <p>それぞれの言葉の裏で、お客様が「原因はこれだ」と思っていそうなことを、お客様の立場になって書きます。合っているかどうかは気にしなくて大丈夫です。</p>
+      </li>
+      <li>
+        <span class="time">10分</span>
+        <h3>本当は何が原因か、自分の知っていることを書く</h3>
+        <p>同じ出来事について、あなたが仕事として知っている「本当はこうだから」を書きます。ここは、お客様には見えていない、あなたにしか見えていない場所です。</p>
+      </li>
+      <li>
+        <span class="time">5分</span>
+        <h3>いちばんズレている1組を選んで、一文にする</h3>
+        <p>3組のうち、左と右がいちばん離れているものを1つ選びます。「本当は◯◯だから、△△なんです」の形にすると、それがあなたの一言になります。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="sheet">
+    <div class="sheetbar">
+      <div>
+        <p class="eyebrow">記入シート</p>
+        <h2 class="sec" style="margin-bottom:4px">ここに書き込んでください</h2>
+      </div>
+      <button class="printbtn noprint" onclick="window.print()">🖨 印刷する</button>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet-head">
+        <p class="label">「あなたから買いたい」と言われる一言の、見つけ方</p>
+        <h3>お客様が思っている原因　×　本当の原因</h3>
+      </div>
+
+      <div class="sheet-block">
+        <h4>① 最近、実際に言われた言葉</h4>
+        <p class="hint">この1〜2ヶ月で言われた言葉を、そのまま3つ</p>
+        <div class="words">
+          <div class="fill-line"></div>
+          <div class="fill-line"></div>
+          <div class="fill-line"></div>
+        </div>
+      </div>
+
+      <div class="sheet-block">
+        <h4>② それぞれの言葉について、2列に書き出す</h4>
+        <p class="hint">①の3つを、上から順にこの形に当てはめてください</p>
+        <div class="row3">
+          <div class="cols">
+            <div class="col">
+              <p class="col-h">お客様が「原因はこれだ」と<br>思っていること</p>
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+            <div class="col">
+              <p class="col-h">本当は、こうだから<br>（自分が知っていること）</p>
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="col">
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+            <div class="col">
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="col">
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+            <div class="col">
+              <div class="fill-line"></div>
+              <div class="fill-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-block">
+        <h4>③ いちばんズレている1組を、一文にする</h4>
+        <p class="hint">これが、あなたにしか言えない一言です</p>
+        <div class="answerbox">
+          <p class="tmpl">本当は、<span class="fill-line" style="display:inline-block;width:38%;margin:0 4px;vertical-align:middle"></span>だから、<span class="fill-line" style="display:inline-block;width:38%;margin:0 4px;vertical-align:middle"></span>なんです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" class="noprint">
+    <p class="eyebrow">AIに手伝ってもらう</p>
+    <h2 class="sec">詰まったときのプロンプト3本</h2>
+    <p class="sub">ChatGPTやClaudeにそのまま貼って使えます。書くのはあなた、AIは手伝うだけです</p>
+
+    <div class="promptcard">
+      <div class="ph"><h3>①言われた言葉が思いつかないとき</h3><button class="copybtn" onclick="copyPrompt(this,'p1')">コピー</button></div>
+      <p class="when">ステップ1で手が止まったら</p>
+      <pre id="p1">私は【何をしている人か、一言で】をしています。お客様や生徒さんから実際に言われそうな言葉──「高い」「センスがない」「時間がない」のようなものを、私の業種の実例に寄せて10個、リストアップしてください。その中から、自分が実際に言われたことがあるものを私が選びます。</pre>
+    </div>
+
+    <div class="promptcard">
+      <div class="ph"><h3>②本当の原因を言葉にする手伝い</h3><button class="copybtn" onclick="copyPrompt(this,'p2')">コピー</button></div>
+      <p class="when">ステップ3で、分かっているのにうまく言葉にできないとき</p>
+      <pre id="p2">私が書いた「お客様が思っている原因」はこれです。
+【シートの左列に書いた内容を貼り付けてください】
+
+この思い込みの裏にある「本当の理由」を、私はすでに知っています。ただ、うまく言葉にできません。「本当は〇〇だから、△△なんです」という一文になるように、私に3つ質問をして、引き出してください。答えを先に言わないでください。</pre>
+    </div>
+
+    <div class="promptcard">
+      <div class="ph"><h3>③できた一文を、短く整える</h3><button class="copybtn" onclick="copyPrompt(this,'p3')">コピー</button></div>
+      <p class="when">ステップ4で、一文はできたけど長い・硬いと感じるとき</p>
+      <pre id="p3">次の一文を、内容は変えずに、もっと短く、日常の言葉にしてください。専門用語や比喩は使わず、中学生でも分かる言葉にしてください。案は1つだけで大丈夫です。
+
+【できた一文を貼り付けてください】</pre>
+    </div>
+  </section>
+
+  <section id="examples">
+    <p class="eyebrow">記入例</p>
+    <h2 class="sec">場面別の記入例・3つ</h2>
+    <p class="sub">実際の記入をイメージするための例です。そのまま使わず、自分の言葉に置き換えてください</p>
+
+    <div class="example">
+      <span class="tag">店舗</span>
+      <p class="said">「オーガニックって、なんか高いですよね」</p>
+      <dl>
+        <dt>お客様が思っている原因</dt>
+        <dd>商品そのものの値段が高いから</dd>
+        <dt>本当の原因</dt>
+        <dd>比べている相手が、隣の棚に並ぶ別の商品だから。育て方も、手間も、まったく違うものを、同じ棚だからという理由だけで比べてしまっている</dd>
+      </dl>
+      <div class="oneline">本当は、隣の商品とは作られ方がまったく違うから。同じ棚に並んでいるだけで、比べる相手を間違えているんです。</div>
+    </div>
+
+    <div class="example">
+      <span class="tag">講師</span>
+      <p class="said">「独学でもできますよね？」</p>
+      <dl>
+        <dt>お客様が思っている原因</dt>
+        <dd>教材や情報は、すでにネットにたくさんあるから</dd>
+        <dt>本当の原因</dt>
+        <dd>情報はあっても、自分に合った順番と、迷ったときに聞ける相手がないと、遠回りして途中でやめてしまう人がほとんどだから</dd>
+      </dl>
+      <div class="oneline">本当は、情報が足りないんじゃなくて、順番と、迷ったときに聞ける人がいないだけなんです。</div>
+    </div>
+
+    <div class="example">
+      <span class="tag">つくり手</span>
+      <p class="said">「もっと写真をきれいに撮ったほうが売れますよ」</p>
+      <dl>
+        <dt>お客様が思っている原因</dt>
+        <dd>見せ方、写真の質が足りないから</dd>
+        <dt>本当の原因</dt>
+        <dd>写真をきれいにしても、なぜこの作り方をしているのかが伝わっていなければ、他の商品と並んだ瞬間に埋もれてしまうから</dd>
+      </dl>
+      <div class="oneline">本当は、写真じゃなくて、なぜこの作り方をしているかが伝わっていないだけなんです。</div>
+    </div>
+  </section>
+
+  <section id="closing">
+    <p class="eyebrow">最後に</p>
+    <div class="closing">
+      <p>できた一言は、今日すぐに使わなくても大丈夫です。まずは、手元に置いておいてください。</p>
+      <p class="soft">このあと値段の付け方や、伝える順番を考えるときに迷ったら、このシートに書いた一文に戻ってきてください。ここが、そのための土台になります。</p>
+      <a class="back" href="./">← 教材ページに戻る</a>
+    </div>
+  </section>
+</div>
+
+<footer class="noprint">
+  <div class="wrap">
+    <img src="../images/logo_orange.png" alt="Institut für Organic Business">
+    <div><a href="https://iob.bio/">ドイツIOBオーガニックスクール</a></div>
+    <div id="cr"></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('cr').textContent =
+  '© ' + new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',year:'numeric'}).format(new Date())
+  + ' Institut für Organic Business GmbH. All Rights Reserved.';
+
+function copyPrompt(btn,id){
+  var text = document.getElementById(id).textContent;
+  var done = function(){
+    var orig = btn.textContent;
+    btn.textContent = 'コピーしました';
+    btn.classList.add('done');
+    setTimeout(function(){ btn.textContent = orig; btn.classList.remove('done'); }, 1800);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(function(){});
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); done(); }catch(e){}
+    document.body.removeChild(ta);
+  }
+}
+</script>
+</body>
+</html>
