@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>高くても選ばれる届け方｜無料教材｜ドイツIOBオーガニックスクール</title>
-<meta name="description" content="良いものなのに値段で比べられてしまう。オーガニックを広めていきたい方へ、ドイツから延べ1900人以上に伝えてきた「高くても選ばれる届け方」の無料教材をお渡しします。">
-<meta property="og:title" content="高くても選ばれる届け方｜無料教材">
-<meta property="og:description" content="ドイツから延べ1900人以上に伝えてきた、高くても選ばれる届け方を無料の教材にまとめました。">
+<title>応援されるオーガニック発信の極意｜無料教材｜ドイツIOBオーガニックスクール</title>
+<meta name="description" content="オーガニックを仕事で伝えている、あなたへ。「オーガニックって何？」に、自分の言葉で答える。その先に、お客様と「そんな世界だったんですね」と話せる未来がある。安心・安全の、その先にあるオーガニックの意味を学ぶ無料教材です。">
+<meta property="og:title" content="応援されるオーガニック発信の極意｜無料教材">
+<meta property="og:description" content="「オーガニックって何？」に、自分の言葉で答える。その先に、お客様と「そんな世界だったんですね」と話せる未来がある。専門家コースの授業1回分・10問診断・書き込みワークを無料でお渡しします。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iob.bio/organiclove/">
 <meta property="og:image" content="https://iob.bio/organiclove/images/natsuko.jpg">
@@ -49,14 +49,16 @@ p:last-child{margin-bottom:0}
 .pill{
   display:inline-block;padding:7px 16px;border-radius:999px;
   background:var(--surface);border:1px solid var(--border);
-  font-size:11.5px;letter-spacing:.1em;color:var(--ink-soft);line-height:1.6;
+  font-size:11.5px;letter-spacing:.06em;color:var(--ink-soft);line-height:1.6;white-space:nowrap;
 }
 .fv h1{
   font-family:"Zen Old Mincho",serif;font-weight:500;
-  font-size:clamp(24px,6.2vw,33px);line-height:1.62;
-  margin:22px 0 0;text-wrap:balance;
+  font-size:clamp(16px,5.3vw,30px);line-height:1.7;
+  margin:22px 0 0;
 }
 .fv h1 .em{color:var(--accent)}
+.recap h2{font-size:clamp(18px,5vw,27px) !important}
+.nw{display:inline-block}
 .fv .sub{margin:20px 0 0;font-size:14.5px;line-height:2;color:var(--ink-soft)}
 .trust{
   margin:18px 0 0;font-size:11.5px;line-height:1.9;color:var(--ink-faint);
@@ -175,9 +177,10 @@ section.band-orange .recap p{color:rgba(255,255,255,.88)}
 .transform-before{background:var(--surface);border:1px solid var(--border)}
 .transform-before .tag{font-size:11px;letter-spacing:.15em;color:var(--ink-faint)}
 .transform-arrow{
-  text-align:center;padding:14px 0;background:#241a14;color:#f5c9a8;
-  font-size:20px;margin:0 -22px;
+  display:flex;justify-content:center;align-items:center;
+  padding:14px 0;margin:0;background:none;color:var(--accent);
 }
+.transform-arrow svg{width:22px;height:22px;opacity:.75}
 .transform-after{background:var(--accent);color:#fff}
 .transform-after .tag{font-size:11px;letter-spacing:.15em;color:rgba(255,255,255,.7)}
 .transform-card p,.transform-card li{margin:0 0 10px;font-size:14.5px;line-height:1.9}
@@ -233,6 +236,66 @@ section.band-orange .timeline li::before{background:#241a14}
 section.band-orange .timeline li::after{background:rgba(255,255,255,.3)}
 
 /* ---------- 文中の強調（太字・ハイライト・大きい一文） ---------- */
+/* ---------- 理念バナー（FV上段） ---------- */
+.creed{
+  margin:18px 0 0;font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:13.5px;letter-spacing:.14em;color:var(--accent);line-height:1.8;
+}
+/* ---------- AFTER：お客さんのセリフ吹き出し ---------- */
+.says{margin:16px 0 0}
+.say{
+  background:#fff;color:var(--ink);border-radius:10px;
+  padding:15px 17px;margin:0 0 15px !important;
+  font-size:14.5px;line-height:1.85;position:relative;
+}
+.say::after{
+  content:"";position:absolute;left:24px;bottom:-9px;
+  width:0;height:0;border:9px solid transparent;border-top-color:#fff;border-bottom:0;
+}
+.say:last-of-type{margin-bottom:0 !important}
+.after-close{margin:26px 0 0 !important;font-weight:500;font-size:15px !important}
+/* ---------- 教材カバー（画像に差し替えるまでのCSS版） ---------- */
+.cover-wrap{margin:0 0 30px}
+.cover-img{width:78%;max-width:290px;margin:0 auto;border-radius:3px;box-shadow:0 10px 26px rgba(85,55,39,.24)}
+.cover-frame{
+  width:78%;max-width:290px;margin:0 auto;aspect-ratio:3/4.24;
+  background:linear-gradient(170deg,#2f2119 0%,#4a3122 62%,#6b3d1f 100%);
+  border-radius:3px;box-shadow:0 10px 26px rgba(85,55,39,.28);
+  padding:30px 22px 24px;display:flex;flex-direction:column;text-align:center;color:#fff;
+}
+.cover-eyebrow{font-size:9.5px;letter-spacing:.18em;color:rgba(255,255,255,.6);margin:0 0 auto !important;line-height:1.7}
+.cover-title{
+  font-family:"Zen Old Mincho",serif;font-weight:500;
+  font-size:clamp(19px,5.6vw,24px);line-height:1.5;margin:0 0 14px !important;
+}
+.cover-title .em{color:#f5c9a8}
+.cover-sub{font-size:11.5px;line-height:1.85;color:rgba(255,255,255,.82);margin:0 0 auto !important}
+.cover-band{
+  background:var(--accent);color:#fff;font-size:11.5px;line-height:1.7;
+  margin:0 -22px 14px !important;padding:9px 12px;letter-spacing:.02em;
+}
+.cover-author{font-family:"Zen Old Mincho",serif;font-size:12.5px;color:rgba(255,255,255,.9);margin:0 !important;letter-spacing:.08em}
+/* ---------- 収録内容スペック ---------- */
+.spec dl{margin:0;font-size:14.5px;line-height:1.9}
+.spec dt{font-size:11px;letter-spacing:.15em;color:var(--ink-faint);margin:0 0 3px}
+.spec dd{margin:0 0 18px;padding:0 0 18px;border-bottom:1px solid var(--border)}
+.spec dd:last-child{margin:0;padding:0;border:0}
+/* ---------- 未確定プレースホルダ（公開前に必ず差し替え） ---------- */
+.todo{
+  background:#fff6ef;border:1px dashed var(--accent);border-radius:6px;
+  padding:14px 16px;margin:18px 0 0;font-size:13px;line-height:1.9;color:var(--ink-soft);
+}
+.todo b{color:var(--accent)}
+/* ---------- 受講生の声カード ---------- */
+.voice-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:24px 20px;margin:0 0 18px}
+.voice-card:last-of-type{margin-bottom:0}
+.voice-name{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:17px;line-height:1.6;margin:0 0 4px}
+.voice-role{font-size:12px;color:var(--ink-faint);line-height:1.8;margin:0 0 16px}
+.voice-card blockquote{margin:0 0 13px;padding:0 0 0 15px;border-left:2px solid var(--accent);
+  font-size:14.5px;line-height:1.95;color:var(--ink)}
+.voice-card blockquote:last-of-type{margin-bottom:0}
+.voice-src{font-size:11.5px;color:var(--ink-faint);line-height:1.8;margin:16px 0 0;padding:13px 0 0;border-top:1px solid var(--border)}
+.voice-src a{color:var(--accent)}
 .hl{font-weight:700;color:var(--accent)}
 .mark{
   font-weight:700;background-image:linear-gradient(rgba(242,107,59,.22),rgba(242,107,59,.22));
@@ -248,6 +311,24 @@ section.band-black .mark,section.band-orange .mark{
 }
 section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 
+/* ---------- まず受け取ってほしい3つ（結果で見せる） ---------- */
+.picks{list-style:none;margin:0 0 30px;padding:0;counter-reset:pk}
+.pick{counter-increment:pk;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:22px 20px 20px;margin:0 0 16px}
+.pick:last-child{margin-bottom:0}
+.pick-meta{font-size:11.5px;letter-spacing:.08em;color:var(--ink-faint);margin:0 0 6px !important;line-height:1.7}
+.pick-meta::before{content:counter(pk,decimal-leading-zero);color:var(--accent);font-family:"Zen Old Mincho",serif;font-weight:600;margin-right:10px;letter-spacing:0}
+.pick h3{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:17px;line-height:1.6;margin:0 0 12px}
+.pick-result{font-size:14.5px !important;line-height:1.9;margin:0 !important;padding:12px 0 0;border-top:1px solid var(--border)}
+.pick-result b{color:var(--accent);font-weight:700;margin-right:6px}
+.form-picks{list-style:none;margin:0 auto 24px;padding:0;max-width:360px;font-size:13.5px;line-height:1.85;color:var(--ink-soft)}
+.form-picks li{position:relative;padding:0 0 0 20px;margin:0 0 8px}
+.form-picks li::before{content:"";position:absolute;left:3px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.stats-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px 10px;text-align:center;margin:0}
+.stats-3 .stat-num{font-size:clamp(26px,7vw,40px)}
+.stats-3 .stat-label{font-size:12px}
+/* ---------- フォーム直下の呼びかけ ---------- */
+.invite{text-align:center;padding:34px 0 8px}
+.invite-text{font-family:"Zen Old Mincho",serif;font-weight:500;color:var(--accent);font-size:clamp(17px,4.8vw,22px);line-height:1.8;margin:0}
 @media (min-width:700px){
   body{font-size:16.5px}
   section{padding:72px 0}
@@ -264,22 +345,25 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 <!-- ============ 1. ファーストビュー ============ -->
 <div class="wrap">
   <div class="fv">
-    <span class="pill">オーガニックを広めていきたい、あなたへ</span>
+    <span class="pill">オーガニックを仕事で伝えている、あなたへ</span>
 
-    <h1>なぜ、売り込むのをやめて<br>「教える」に変えた人から、<br><span class="em">値段で比べられなくなる</span>のか</h1>
+    <p class="creed">「オーガニックが、あたりまえ。」な社会へ</p>
 
-    <p class="sub">ドイツから延べ1900人以上に伝えてきた、<br>高くても選ばれる届け方を、<br>無料の教材にまとめました。</p>
 
-    <p class="trust">ドイツ大学院と食品研究所でオーガニック研究開発<br>創業7年・日本最大のオーガニックコミュニティ運営<br>オーガニック企業大手「ビオセボン」年間社員研修担当</p>
+    <h1><span class="nw">「オーガニックって何？」に、</span><br><span class="nw">自分の言葉で答える。</span><br><span class="nw">その先に、お客様と</span><br><span class="nw em">「そんな世界だったんですね」と</span><br><span class="nw">話せる未来がある。</span></h1>
+
+    <p class="sub">安心・安全の、その先にある<br>オーガニックの意味を、<br>エビデンスと世界の定義から学ぶ。<br>自分の言葉で、自信を持って伝えるための<br>土台をつくる無料教材です。</p>
+
+    <p class="trust">ドイツの大学院で有機農業を専攻<br>延べ1,900人以上が学ぶスクールを運営</p>
 
     <div class="portrait">
       <img src="images/natsuko.jpg" alt="レムケなつこ" width="680" height="850">
     </div>
 
     <div class="lede">
-      <p>良いものなのに、値段で比べられる。安くする以外、返し方が見つからない。</p>
-      <p>その答えは、値引きでも広告でもなく「教えること」でした。</p>
-      <p>中身は全部、ここに置いています。</p>
+      <p>お客様に聞かれたとき、自分の言葉で伝えたい。<br>その自信は、オーガニックを深く知ることから生まれます。</p>
+      <p>知識が増えると、自分の中に「軸」ができる。<br>その軸が、伝える言葉を支えてくれる。</p>
+      <p>世界の定義とエビデンスから学び、自分の仕事に置き換えて考える。<br>その最初の一歩を、授業動画・診断・書き込みワークにまとめました。</p>
     </div>
   </div>
 </div>
@@ -288,8 +372,13 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 <div class="wrap">
 <section id="form">
   <div class="formbox">
-    <h2>無料教材を受け取る</h2>
-    <p class="lead">無料教材は、メールマガジンでお届けします</p>
+    <h2>応援される<br>オーガニック発信の極意</h2>
+    <p class="lead">無料でお渡しします（ご登録後すぐに教材ページが開きます）</p>
+    <ul class="form-picks">
+      <li>32分の授業で、オーガニックを「世界の定義」から説明できるようになる</li>
+      <li>3分の10問診断で、あなたの仕事のどこで止まっているかが分かる</li>
+      <li>30分の書き込みワークで、お客様に返す自分の一言が1本できる</li>
+    </ul>
 
     <form class="optin" novalidate>
       <div class="field">
@@ -305,48 +394,45 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     </form>
 
     <p class="fineprint">
-      無料教材は、ご登録いただいたメールアドレス宛に、メールマガジンでお届けします。メールが届かない場合は、迷惑メールフォルダをご確認ください。<br>
-      このあと、オーガニックの届け方についてのメールをお送りします。配信はいつでも解除できます。
+      ご登録のあとすぐに、教材のページをご案内するメールが届きます。届かない場合は、迷惑メールフォルダをご確認ください。<br>
+      このあと、オーガニックの伝え方についてのメールをお送りします。配信はいつでも解除できます。
     </p>
   </div>
 </section>
 
-<!-- ============ 3. 受け取ると分かること ============ -->
+<!-- ============ 2.5 呼びかけ（フォーム直下） ============ -->
+<div class="invite">
+  <p class="invite-text"><span class="nw">私たちと一緒に、</span><br><span class="nw">「オーガニックが、あたりまえ。」</span><br><span class="nw">な社会を作りませんか？</span></p>
+</div>
+
+<!-- ============ 3. BEFORE → AFTER（最重要セクション） ============ -->
 <section>
-  <p class="eyebrow">CONTENTS</p>
-  <h2 class="sec">受け取ってから、<br>こう変わります</h2>
+  <p class="eyebrow">BEFORE &rarr; AFTER</p>
+  <h2 class="sec">売上も、仲間も、<br>後からついてきます</h2>
   <div class="transform">
     <div class="transform-card transform-before">
       <p class="tag">BEFORE</p>
       <p class="transform-heading">値段の話になると、<br>安くする以外の返し方がない</p>
       <ul>
-        <li>実績はあるのに、オーガニックのことは「まだ素人なので」と言ってしまう</li>
+        <li>サロンや教室、お店、講師や専門職としての実績はあるのに、オーガニックのことになると「まだ素人なので」と言ってしまう</li>
         <li>エビデンスや資格を集めているのに、自分の言葉で語れる自信がない</li>
         <li>フォロワー数や「いいね」を、結局追いかけてしまっている</li>
+        <li>がんばっているのに、誰にも応援されていない気がする。パートナーにも、親にも、うまく説明できない</li>
       </ul>
     </div>
-    <div class="transform-arrow">→</div>
+    <div class="transform-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
     <div class="transform-card transform-after">
       <p class="tag">AFTER</p>
-      <p class="transform-heading">同じ説明でも、<br>「高くても欲しい」と言われる</p>
-      <ul>
-        <li>「この人になら」と思ってもらえる、伝え方の基準を持てている</li>
-        <li>煽らなくても人が集まる伝え方に変わっている</li>
-        <li>ドイツから1900人以上に届けてきた「届け方」の型を、自分の言葉で語れる</li>
-      </ul>
+      <p class="transform-heading">お客さんのほうから、<br>こう言われるようになります</p>
+      <div class="says">
+        <p class="say">「高いと思ってたけど、本当の価値を知ったら買えるようになりました」</p>
+        <p class="say">「高いと思ってたけど、今考えたら安かったですね」</p>
+        <p class="say">「オーガニックって、ただ高いだけじゃなかったんですね」</p>
+        <p class="say">「そんなに思いやりのある世界だったんですね」</p>
+      </div>
+      <p class="after-close">値段の話が、価値の話に変わる。<br>そのとき、あなたはもう<br>応援される側に立っています。</p>
     </div>
   </div>
-</section>
-
-<!-- ============ 4. 心当たり ============ -->
-<section>
-  <p class="eyebrow">CHECK</p>
-  <h2 class="sec">こんなところで、<br>止まっていませんか</h2>
-  <ul class="check">
-    <li>サロンや教室、専門職としての実績はあるのに、オーガニックのことになると「まだ素人なので」と言ってしまう</li>
-    <li>エビデンスや資格を求めて情報を集めているのに、それを自分の言葉でお客さんに語れる自信がまだない</li>
-    <li>値段の話になると、安くする以外の返し方が見つからない</li>
-  </ul>
 </section>
 
 <!-- ============ 5. 構造 ============ -->
@@ -359,50 +445,87 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <p>そして日本では、この全体像を体系で教える場所が、ほとんどありませんでした。誰かが隠してきたのではなく、<span class="mark">教育で扱われてこなかった</span>。それだけのことです。</p>
 </section>
 
-<!-- ============ 6. 教材 ============ -->
+<!-- ============ 6. 教材（中身を見せる） ============ -->
 <section>
   <p class="eyebrow">MATERIALS</p>
-  <h2 class="sec">いま置いてあるもの</h2>
-  <div class="card">
-    <h3>『誰から学ぶかが、すべてを決める』全3章</h3>
-    <ol>
-      <li>1900人集めて、わかったこと</li>
-      <li>誰から学ぶかが、すべてを決める</li>
-      <li>フォロワー数を、追うのをやめました</li>
-    </ol>
-  </div>
-  <p class="note">このほか、これまでの音声・書籍・動画から、届け方に直接効くものを選んで同じページに置いています。教材は随時追加していて、追加のたびに同じページが新しくなります。</p>
-</section>
+  <h2 class="sec">受け取ったあと、<br>できるようになること</h2>
 
-<!-- ============ 7. そろうと、こうなります ============ -->
-<section>
-  <p class="eyebrow">AFTER</p>
-  <h2 class="sec">そろうと、こうなります</h2>
-  <ol class="steps">
-    <li>自分が届けたい価値を、自分の言葉で言えるようになる</li>
-    <li>何を根拠に選び、何を伝えないのか。その基準を自分の中に持てる</li>
-    <li>安くしなくても「この人から買いたい」と言われる届け方が分かる</li>
+  <div class="cover-wrap">
+    <!-- ▼ カバー画像ができたら、この <div class="cover-frame"> ～ </div> を丸ごと下の1行に差し替えてください
+         <img class="cover-img" src="images/cover.jpg" alt="応援されるオーガニック発信の極意">        -->
+    <div class="cover-frame">
+      <p class="cover-eyebrow">ドイツIOBオーガニックスクール</p>
+      <p class="cover-title">応援される<br>オーガニック発信の<br><span class="em">極意</span></p>
+      <p class="cover-sub">高いからこそ選ばれる、<br>本質的な伝え方</p>
+      <p class="cover-band">値段の話は、ここで終わりにする。</p>
+      <p class="cover-author">レムケなつこ</p>
+    </div>
+  </div>
+
+  <p>まず、この3つから始めてください。合わせて約65分です。</p>
+  <ol class="picks">
+    <li class="pick">
+      <p class="pick-meta">🎥 動画・全6パート・約32分</p>
+      <h3>オーガニック専門家コースの授業を、1回まるごと</h3>
+      <p>受講生が最初に見る授業「有機農業の原理」を、要約せずにそのまま置いています。「健康にいい」「環境にいい」だけではない、オーガニックの世界的な定義を扱う回です。</p>
+      <p class="pick-result"><b>見終わると</b>「オーガニックって結局なに？」に、世界の定義と歴史から答える土台ができます。</p>
+    </li>
+    <li class="pick">
+      <p class="pick-meta">🔍 診断・10問・約3分</p>
+      <h3>売れない原因は、10問で分かる</h3>
+      <p>店頭・対面の仕事か、発信から声がかかる仕事かで、質問が少し変わります。直感で答えて大丈夫です。</p>
+      <p class="pick-result"><b>答え終わると</b>今一番力を入れると変わる場所が1つに決まり、次に読む教材が分かります。</p>
+    </li>
+    <li class="pick">
+      <p class="pick-meta">✏️ 書き込むもの・1枚・約30分</p>
+      <h3>「あなたから買いたい」と言われる一言の、見つけ方</h3>
+      <p>お客様に実際に言われた言葉を3つ書き出し、「お客様が思っている原因」と「本当の原因」を2列に並べます。店舗・サロン・講座の記入例つきです。</p>
+      <p class="pick-result"><b>書き終わると</b>「高いですね」と言われたときに返す、自分の現場でしか出てこない一言が1本できます。</p>
+    </li>
   </ol>
-  <p class="note">順番はこのとおりです。3から始めても、届きません。</p>
+
+  <p class="eyebrow" style="margin-top:8px">ほかにも、同じページに置いているもの</p>
+
+
+  <div class="card spec">
+    <h3>収録内容</h3>
+    <dl>
+      <dt>📄 読みもの・✏️ 書き込むワーク｜上の3つ以外に7本</dt>
+      <dd>なぜ、良いものほど伝わらないのか<br>
+        値上げできないのは、優しさのせいではありません<br>
+        1900人集めて分かった、煽ってはいけない理由<br>
+        値上げしないで、売上を上げる ― 値段の階段のつくり方<br>
+        売り込まずにお客様が集まる7日間計画<br>
+        「オーガニックって結局なに？」に、自分の言葉で答えられるようになる<br>
+        「この認証、大丈夫ですか？」に、その場で答えられる1枚（印刷可）</dd>
+      <dt>🎧 音声｜毎朝の配信</dt>
+      <dd><b>スナックなつこ</b><br>ドイツからの毎日配信。オーガニックの伝え方、事業の考え方、日々の判断を声で話しています。</dd>
+      <dt>＋ 読みもの『誰から学ぶかが、すべてを決める』全3章</dt>
+      <dd>教材ページに全文を掲載しています。教材は随時追加していて、追加のたびに同じページが新しくなります。</dd>
+    </dl>
+    <p class="note" style="margin-top:22px">スマホでそのまま視聴・記入できます。印刷して使えるものもあります。</p>
+  </div>
+
+  <p class="note">読むだけでも使えるものにしています。順番に並べてありますが、気になるところから読んでいただいて構いません。</p>
 </section>
 
 <!-- ============ 7.5 実績 ============ -->
 <section>
   <p class="eyebrow">ACHIEVEMENTS</p>
   <h2 class="sec">主な実績</h2>
-  <div class="stats-grid">
+  <div class="stats-3">
+    <div>
+      <p class="stat-num">17<span style="font-size:.5em">年</span></p>
+      <p class="stat-label">南ドイツ<br>在住</p>
+    </div>
     <div>
       <p class="stat-num">1,900<span style="font-size:.5em">名+</span></p>
-      <p class="stat-label">コース受講生延べ</p>
+      <p class="stat-label">スクールの<br>延べ受講生</p>
     </div>
     <div>
-      <p class="stat-num">2019</p>
-      <p class="stat-label">ドイツにて設立</p>
+      <p class="stat-num">300<span style="font-size:.5em">名+</span></p>
+      <p class="stat-label">ビオセボン<br>年間社員研修</p>
     </div>
-  </div>
-  <div class="stats-solo">
-    <p class="stat-num">No.1</p>
-    <p class="stat-label">日本最大のオーガニックコミュニティ</p>
   </div>
 </section>
 
@@ -412,9 +535,9 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <div class="profile">
     <div class="pic"><img src="images/natsuko_square.jpg" alt="レムケなつこ"></div>
     <p class="name serif">レムケなつこ</p>
-    <p class="role">南ドイツ・バイエルン州在住／オーガニック専門家</p>
+    <p class="role">南ドイツ・バイエルン州在住／オーガニック教育の専門家</p>
     <p>ボリビアでJICA青年海外協力隊として、メキシコでJICA専門家として、途上国の生産者支援に携わりました。そこでオーガニックの社会的な意義に気づき、いまはドイツで学校を運営しています。</p>
-    <p>教えているのは、認証の知識だけではありません。自分が信じているものを、値段で比べられない形で届けるところまでを、一続きにして渡しています。</p>
+    <p>教えているのは、認証の知識だけではありません。自分が信じているものを、値段で比べられない形で届けるところまでを、一続きにして渡しています。<span class="mark">オーガニックは、すべての命を幸せにする仕組み</span>。それを文化にするところまでが、私の仕事だと思っています。</p>
     <ul class="check creds">
       <li>「ドイツIOBオーガニックスクール」創立。創業7年で延べ1900人以上が在籍する日本最大のオーガニックコミュニティに成長</li>
       <li>慶應義塾大学経済学部卒業</li>
@@ -448,6 +571,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <p class="punch">オーガニックが広がることが、<br>社会を豊かにする。</p>
   <p>オーガニック起業家が豊かになるということは、素晴らしいものを市場に循環させ、オーガニックを広げているということ。事業というツールを使ってオーガニックを広げる人は、<span class="hl">その地域の水・土・生態系を守り、未来世代のことを思っている</span>人です。</p>
   <p>地域は全世界とつながっているから、それは地球全体の未来、私たちの未来そのものを守っていることでもある。<span class="mark">だから、彼ら彼女らが豊かになることが決定的に大事</span>だと思っています。</p>
+  <p class="punch">オーガニック起業家が<br>豊かになるのは、正しい。</p>
 </section>
 
 <!-- ============ 8.7 オーガニック入門書 ============ -->
@@ -463,7 +587,6 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     <p class="lead-in">―― そんな起業家やプレ起業家へ向けて、ドイツで15年積み上げてきたオーガニックのエビデンスと、「すべての命が幸せになる仕組み」としてのオーガニックを、入門書として一冊にまとめました。</p>
     <a class="btn" href="https://amzn.asia/d/0b1NWjkc" target="_blank" rel="noopener">Amazonで購入する →</a>
   </div>
-  <p class="note">※ 書籍卸価格についてのお問い合わせは <a href="mailto:hi@iob.bio">hi@iob.bio</a> までお寄せください。</p>
 </section>
 
 <!-- ============ 8.8 3つの段階 ============ -->
@@ -473,7 +596,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <ul class="timeline">
     <li data-n="1">
       <h4>入る前</h4>
-      <p>サロンや教室での実績はあるのに、オーガニックのことだけは「まだ素人なので」と言ってしまう。エビデンスや資格を求めて、情報だけを一人で集めている。</p>
+      <p>一人で情報を集めている。同じ問いを持つ人が、まわりに誰もいない。</p>
     </li>
     <li data-n="2">
       <h4>在学中</h4>
@@ -481,24 +604,67 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     </li>
     <li data-n="3" class="is-last">
       <h4>この先</h4>
-      <p>値段で比べられない届け方を、自分の言葉で語れるようになる。数字やフォロワー数を追わなくても、事業を続けていける。</p>
+      <p>値段で比べられない伝え方を、自分の言葉で語れるようになる。数字やフォロワー数を追わなくても、応援してくれる人に囲まれて事業を続けていける。</p>
     </li>
   </ul>
+</section>
+
+<!-- ============ 8.9 受講生の声（実素材：書籍・インタビュー動画より） ============ -->
+<section>
+  <p class="eyebrow">VOICE</p>
+  <h2 class="sec">応援される人に、<br>変わっていきました</h2>
+
+  <div class="voice-card">
+    <p class="voice-name">猿田一生さん</p>
+    <p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p>
+    <blockquote>従業員時代はこの想いが理解されず、日々孤独を感じていました。</blockquote>
+    <blockquote>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</blockquote>
+    <blockquote>そして家族のように何でも話し合える仲間と出会えたことが、私にとっては一生の宝です。</blockquote>
+    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">川田むつみさん</p>
+    <p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」（千葉県松戸市）代表<br>株式会社かわた 取締役</p>
+    <blockquote>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</blockquote>
+    <blockquote>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</blockquote>
+    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">柳田夕希さん</p>
+    <p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p>
+    <blockquote>オーガニックという言葉は、美容とか健康にいいということしか私は知らなくて。そういうところじゃなくて、オーガニックが社会を変える仕組み、社会全体を幸せにする仕組みということを学んだのが、すごく自分の中で気づきがありました。</blockquote>
+    <blockquote>入ってなかったら、本当にビジネスも成り立たないですし、オーガニックのことを話せる仲間もいなかったと思います。</blockquote>
+    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=Ov4lZdxaHHI" target="_blank" rel="noopener">対談を見る →</a></p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">村田枝里さん</p>
+    <p class="voice-role">北海道・余市町／有機農家・料理人</p>
+    <blockquote>もともと、オーガニックがいま世界で起きている問題の解決策になるという気持ちがありました。IOBに入って、その決意が揺るがないものになりましたね。</blockquote>
+    <blockquote>知識がないと選べない。選び方がわからない。知識があるということは、たくさんの選択肢の中から、自分の人生を決めていけるということ。</blockquote>
+    <blockquote>新しい扉が開けるよ。</blockquote>
+    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=OlyG-AKINbQ" target="_blank" rel="noopener">対談を見る →</a></p>
+  </div>
+
+  <p class="note">いずれも「オーガニック専門家コース」受講生の方です。ここに置いた言葉は、書籍とインタビュー動画で本人が語ったものをそのまま引用しています。</p>
 </section>
 
 <!-- ============ 9. 位置づけ ============ -->
 <section>
   <p class="eyebrow">ABOUT</p>
   <h2 class="sec">この教材について</h2>
-  <p>すべて無料です。受け取ったあと、届け方についてのメールをお送りします。読むだけでも十分に使えるものにしています。</p>
-  <p>この先に、体系立てて学べる有料のコースもありますが、まずはここに置いたものを持って帰ってください。</p>
+  <p>すべて無料です。受け取ったあと、オーガニックの伝え方についてのメールをお送りします。読むだけでも十分に使えるものにしています。</p>
+  <p>この先に、体系立てて学べる有料のコースもありますが、まずはここに置いたものを持って帰ってください。<span class="mark">出し惜しみはしていません。</span></p>
 </section>
 
 <!-- ============ 10. 再CTA ============ -->
 <section class="band-orange">
   <div class="recap">
-    <h2>高くても選ばれる届け方を、<br>受け取ってください</h2>
-    <p>無料教材は、メールマガジンでお届けします。</p>
+    <p class="creed" style="color:#fff;margin:0 0 14px;letter-spacing:.06em">「オーガニックが、あたりまえ。」な社会へ</p>
+    <h2><span class="nw">「オーガニックって何？」に、</span><br><span class="nw">自分の言葉で答える。</span><br><span class="nw">その先に、お客様と</span><br><span class="nw">「そんな世界だったんですね」と</span><br><span class="nw">話せる未来がある。</span></h2>
+    <p>『応援されるオーガニック発信の極意』<br>32分の授業・10問診断・書き込みワークを、<br>ご登録のあとすぐに始められます。</p>
   </div>
   <div class="formbox">
     <form class="optin" novalidate>
