@@ -291,6 +291,9 @@ section.band-orange .timeline li::after{background:rgba(255,255,255,.3)}
 .voice-card:last-of-type{margin-bottom:0}
 .voice-name{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:17px;line-height:1.6;margin:0 0 4px}
 .voice-role{font-size:12px;color:var(--ink-faint);line-height:1.8;margin:0 0 16px}
+.voice-head{display:flex;align-items:center;gap:14px;margin:0 0 16px}
+.voice-head .voice-role{margin:0}
+.voice-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:0 0 64px;border:2px solid var(--surface-soft)}
 .voice-card blockquote{margin:0 0 13px;padding:0 0 0 15px;border-left:2px solid var(--accent);
   font-size:14.5px;line-height:1.95;color:var(--ink)}
 .voice-card blockquote:last-of-type{margin-bottom:0}
@@ -327,9 +330,15 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 .stats-3 .stat-num{font-size:clamp(26px,7vw,40px)}
 .stats-3 .stat-label{font-size:12px}
 /* ---------- フォーム直下の呼びかけ ---------- */
-.invite{text-align:center;padding:34px 0 8px}
-.invite-lead{font-size:14px;color:var(--ink-soft);line-height:2;margin:0 0 14px}
-.invite-text{font-family:"Zen Old Mincho",serif;font-weight:500;color:var(--accent);font-size:clamp(17px,4.8vw,22px);line-height:1.8;margin:0}
+.invite{padding:40px 0 12px}
+.invite-card{position:relative;margin:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:52px 24px 26px;text-align:center;box-shadow:0 8px 22px rgba(85,55,39,.08)}
+.invite-photo{position:absolute;top:-34px;left:50%;transform:translateX(-50%);width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--bg)}
+.invite-quote{margin:0;position:relative}
+.invite-quote::before{content:"“";position:absolute;top:-30px;left:-6px;font-family:"Zen Old Mincho",serif;font-size:56px;line-height:1;color:var(--accent);opacity:.35}
+.invite-lead{font-size:14.5px;color:var(--ink);line-height:2;margin:0 0 18px;text-align:left}
+.invite-text{font-family:"Zen Old Mincho",serif;font-weight:500;color:var(--accent);font-size:clamp(15px,4.3vw,21px);line-height:1.8;margin:0}
+.invite-sign{margin:18px 0 0;font-family:"Zen Old Mincho",serif;font-size:14px;color:var(--ink-soft);letter-spacing:.12em;text-align:right}
+.invite-sign::before{content:"― ";}
 @media (min-width:700px){
   body{font-size:16.5px}
   section{padding:72px 0}
@@ -403,8 +412,14 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 
 <!-- ============ 2.5 呼びかけ（フォーム直下） ============ -->
 <div class="invite">
-  <p class="invite-lead">一人ひとりが、自分の言葉でオーガニックを伝えられるようになること。<br>その積み重ねが、「オーガニックが、あたりまえ。」な社会につながっていくと、<br>私たちは考えています。</p>
-  <p class="invite-text"><span class="nw">私たちと一緒に、</span><br><span class="nw">「オーガニックが、あたりまえ。」</span><br><span class="nw">な社会を作りませんか？</span></p>
+  <figure class="invite-card">
+    <img class="invite-photo" src="images/natsuko_square.jpg" alt="レムケなつこ">
+    <blockquote class="invite-quote">
+      <p class="invite-lead">一人ひとりが、自分の言葉でオーガニックを伝えられるようになること。その積み重ねが、「オーガニックが、あたりまえ。」な社会につながっていくと、私は考えています。</p>
+      <p class="invite-text"><span class="nw">私たちと一緒に、</span><br><span class="nw">「オーガニックが、あたりまえ。」</span><br><span class="nw">な社会を作りませんか？</span></p>
+    </blockquote>
+    <figcaption class="invite-sign">レムケなつこ</figcaption>
+  </figure>
 </div>
 
 <!-- ============ 3. BEFORE → AFTER（最重要セクション） ============ -->
@@ -451,8 +466,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <h2 class="sec">応援される人に、<br>変わっていきました</h2>
 
   <div class="voice-card">
-    <p class="voice-name">猿田一生さん</p>
-    <p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_saruta.jpg" alt="猿田一生さん"><div><p class="voice-name">猿田一生さん</p><p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p></div></div>
     <blockquote>従業員時代はこの想いが理解されず、日々孤独を感じていました。</blockquote>
     <blockquote>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</blockquote>
     <blockquote>そして家族のように何でも話し合える仲間と出会えたことが、私にとっては一生の宝です。</blockquote>
@@ -460,24 +474,21 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   </div>
 
   <div class="voice-card">
-    <p class="voice-name">川田むつみさん</p>
-    <p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」（千葉県松戸市）代表<br>株式会社かわた 取締役</p>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_kawada.jpg" alt="川田むつみさん"><div><p class="voice-name">川田むつみさん</p><p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」（千葉県松戸市）代表<br>株式会社かわた 取締役</p></div></div>
     <blockquote>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</blockquote>
     <blockquote>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</blockquote>
     <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
   </div>
 
   <div class="voice-card">
-    <p class="voice-name">柳田夕希さん</p>
-    <p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_yanagida.jpg" alt="柳田夕希さん"><div><p class="voice-name">柳田夕希さん</p><p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p></div></div>
     <blockquote>オーガニックという言葉は、美容とか健康にいいということしか私は知らなくて。そういうところじゃなくて、オーガニックが社会を変える仕組み、社会全体を幸せにする仕組みということを学んだのが、すごく自分の中で気づきがありました。</blockquote>
     <blockquote>入ってなかったら、本当にビジネスも成り立たないですし、オーガニックのことを話せる仲間もいなかったと思います。</blockquote>
     <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=Ov4lZdxaHHI" target="_blank" rel="noopener">対談を見る →</a></p>
   </div>
 
   <div class="voice-card">
-    <p class="voice-name">村田枝里さん</p>
-    <p class="voice-role">北海道・余市町／有機農家・料理人</p>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_murata.jpg" alt="村田枝里さん"><div><p class="voice-name">村田枝里さん</p><p class="voice-role">北海道・余市町／有機農家・料理人</p></div></div>
     <blockquote>もともと、オーガニックがいま世界で起きている問題の解決策になるという気持ちがありました。IOBに入って、その決意が揺るがないものになりましたね。</blockquote>
     <blockquote>知識がないと選べない。選び方がわからない。知識があるということは、たくさんの選択肢の中から、自分の人生を決めていけるということ。</blockquote>
     <blockquote>新しい扉が開けるよ。</blockquote>
