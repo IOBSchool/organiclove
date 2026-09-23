@@ -328,6 +328,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 .stats-3 .stat-label{font-size:12px}
 /* ---------- フォーム直下の呼びかけ ---------- */
 .invite{text-align:center;padding:34px 0 8px}
+.invite-lead{font-size:14px;color:var(--ink-soft);line-height:2;margin:0 0 14px}
 .invite-text{font-family:"Zen Old Mincho",serif;font-weight:500;color:var(--accent);font-size:clamp(17px,4.8vw,22px);line-height:1.8;margin:0}
 @media (min-width:700px){
   body{font-size:16.5px}
@@ -373,7 +374,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 <section id="form">
   <div class="formbox">
     <h2>応援される<br>オーガニック発信の極意</h2>
-    <p class="lead">無料でお渡しします（ご登録後すぐに教材ページが開きます）</p>
+    <p class="lead">無料でお渡しします（ご登録後すぐにメールでお届けします）</p>
     <ul class="form-picks">
       <li>32分の授業で、オーガニックを「世界の定義」から説明できるようになる</li>
       <li>3分の10問診断で、あなたの仕事のどこで止まっているかが分かる</li>
@@ -402,35 +403,34 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
 
 <!-- ============ 2.5 呼びかけ（フォーム直下） ============ -->
 <div class="invite">
+  <p class="invite-lead">一人ひとりが、自分の言葉でオーガニックを伝えられるようになること。<br>その積み重ねが、「オーガニックが、あたりまえ。」な社会につながっていくと、<br>私たちは考えています。</p>
   <p class="invite-text"><span class="nw">私たちと一緒に、</span><br><span class="nw">「オーガニックが、あたりまえ。」</span><br><span class="nw">な社会を作りませんか？</span></p>
 </div>
 
 <!-- ============ 3. BEFORE → AFTER（最重要セクション） ============ -->
 <section>
   <p class="eyebrow">BEFORE &rarr; AFTER</p>
-  <h2 class="sec">売上も、仲間も、<br>後からついてきます</h2>
+  <h2 class="sec">自信も、仲間も、<br>後からついてきます</h2>
   <div class="transform">
     <div class="transform-card transform-before">
       <p class="tag">BEFORE</p>
-      <p class="transform-heading">値段の話になると、<br>安くする以外の返し方がない</p>
+      <p class="transform-heading">「オーガニックって何？」と<br>聞かれると、言葉に詰まる</p>
       <ul>
         <li>サロンや教室、お店、講師や専門職としての実績はあるのに、オーガニックのことになると「まだ素人なので」と言ってしまう</li>
         <li>エビデンスや資格を集めているのに、自分の言葉で語れる自信がない</li>
-        <li>フォロワー数や「いいね」を、結局追いかけてしまっている</li>
-        <li>がんばっているのに、誰にも応援されていない気がする。パートナーにも、親にも、うまく説明できない</li>
+        <li>オーガニックのことを話せる相手が身近にいない。パートナーや親にも、うまく説明できない</li>
       </ul>
     </div>
     <div class="transform-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
     <div class="transform-card transform-after">
       <p class="tag">AFTER</p>
-      <p class="transform-heading">お客さんのほうから、<br>こう言われるようになります</p>
-      <div class="says">
-        <p class="say">「高いと思ってたけど、本当の価値を知ったら買えるようになりました」</p>
-        <p class="say">「高いと思ってたけど、今考えたら安かったですね」</p>
-        <p class="say">「オーガニックって、ただ高いだけじゃなかったんですね」</p>
-        <p class="say">「そんなに思いやりのある世界だったんですね」</p>
-      </div>
-      <p class="after-close">値段の話が、価値の話に変わる。<br>そのとき、あなたはもう<br>応援される側に立っています。</p>
+      <p class="transform-heading">学んだあと、<br>こう変わっていきます</p>
+      <ul>
+        <li>「オーガニックって何？」と聞かれたとき、世界の定義とエビデンスから、自分の言葉で答えられる</li>
+        <li>扱う商品やサービスを、なぜそれを選ぶのか、自分の基準で説明できる</li>
+        <li>同じ問いを持つ仲間と、確かめ合いながら続けていける</li>
+      </ul>
+      <p class="after-close">あなたの言葉から、<br>お客様にとってのオーガニックの<br>見え方が変わっていきます。</p>
     </div>
   </div>
 </section>
@@ -442,7 +442,49 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <p>本を読んで、講座に出て、認証の資料も読み込んで、発信も続けてきた。それでも「自信を持って、これです」と<span class="mark">言い切れない</span>。</p>
   <p class="punch">足りないのは、努力ではありません。</p>
   <p>オーガニックは、種から生産、加工、流通、そして食卓までが1本につながっている分野です。どこか一箇所だけ詳しくなっても、全体の判断はできません。<span class="hl">断片をいくら集めても、基準にはならない</span>仕組みになっています。</p>
-  <p>そして日本では、この全体像を体系で教える場所が、ほとんどありませんでした。誰かが隠してきたのではなく、<span class="mark">教育で扱われてこなかった</span>。それだけのことです。</p>
+  <p>そして日本では、この全体像を体系で教える場所が、ほとんどありませんでした。誰かが隠してきたのではなく、<span class="mark">教育で扱われてこなかった</span>のです。</p>
+</section>
+
+<!-- ============ 8.9 受講生の声（実素材：書籍・インタビュー動画より） ============ -->
+<section>
+  <p class="eyebrow">VOICE</p>
+  <h2 class="sec">応援される人に、<br>変わっていきました</h2>
+
+  <div class="voice-card">
+    <p class="voice-name">猿田一生さん</p>
+    <p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p>
+    <blockquote>従業員時代はこの想いが理解されず、日々孤独を感じていました。</blockquote>
+    <blockquote>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</blockquote>
+    <blockquote>そして家族のように何でも話し合える仲間と出会えたことが、私にとっては一生の宝です。</blockquote>
+    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">川田むつみさん</p>
+    <p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」（千葉県松戸市）代表<br>株式会社かわた 取締役</p>
+    <blockquote>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</blockquote>
+    <blockquote>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</blockquote>
+    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">柳田夕希さん</p>
+    <p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p>
+    <blockquote>オーガニックという言葉は、美容とか健康にいいということしか私は知らなくて。そういうところじゃなくて、オーガニックが社会を変える仕組み、社会全体を幸せにする仕組みということを学んだのが、すごく自分の中で気づきがありました。</blockquote>
+    <blockquote>入ってなかったら、本当にビジネスも成り立たないですし、オーガニックのことを話せる仲間もいなかったと思います。</blockquote>
+    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=Ov4lZdxaHHI" target="_blank" rel="noopener">対談を見る →</a></p>
+  </div>
+
+  <div class="voice-card">
+    <p class="voice-name">村田枝里さん</p>
+    <p class="voice-role">北海道・余市町／有機農家・料理人</p>
+    <blockquote>もともと、オーガニックがいま世界で起きている問題の解決策になるという気持ちがありました。IOBに入って、その決意が揺るがないものになりましたね。</blockquote>
+    <blockquote>知識がないと選べない。選び方がわからない。知識があるということは、たくさんの選択肢の中から、自分の人生を決めていけるということ。</blockquote>
+    <blockquote>新しい扉が開けるよ。</blockquote>
+    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=OlyG-AKINbQ" target="_blank" rel="noopener">対談を見る →</a></p>
+  </div>
+
+  <p class="note">いずれも「オーガニック専門家コース」受講生の方です。ここに置いた言葉は、書籍とインタビュー動画で本人が語ったものをそのまま引用しています。</p>
 </section>
 
 <!-- ============ 6. 教材（中身を見せる） ============ -->
@@ -456,8 +498,8 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     <div class="cover-frame">
       <p class="cover-eyebrow">ドイツIOBオーガニックスクール</p>
       <p class="cover-title">応援される<br>オーガニック発信の<br><span class="em">極意</span></p>
-      <p class="cover-sub">高いからこそ選ばれる、<br>本質的な伝え方</p>
-      <p class="cover-band">値段の話は、ここで終わりにする。</p>
+      <p class="cover-sub">オーガニックを、<br>世界の定義から学び直す</p>
+      <p class="cover-band">知っている、から、自分の言葉で伝えられるへ。</p>
       <p class="cover-author">レムケなつこ</p>
     </div>
   </div>
@@ -472,7 +514,7 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     </li>
     <li class="pick">
       <p class="pick-meta">🔍 診断・10問・約3分</p>
-      <h3>売れない原因は、10問で分かる</h3>
+      <h3>今どこで止まっているか、10問で確かめる</h3>
       <p>店頭・対面の仕事か、発信から声がかかる仕事かで、質問が少し変わります。直感で答えて大丈夫です。</p>
       <p class="pick-result"><b>答え終わると</b>今一番力を入れると変わる場所が1つに決まり、次に読む教材が分かります。</p>
     </li>
@@ -480,33 +522,11 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
       <p class="pick-meta">✏️ 書き込むもの・1枚・約30分</p>
       <h3>「あなたから買いたい」と言われる一言の、見つけ方</h3>
       <p>お客様に実際に言われた言葉を3つ書き出し、「お客様が思っている原因」と「本当の原因」を2列に並べます。店舗・サロン・講座の記入例つきです。</p>
-      <p class="pick-result"><b>書き終わると</b>「高いですね」と言われたときに返す、自分の現場でしか出てこない一言が1本できます。</p>
+      <p class="pick-result"><b>書き終わると</b>お客様から実際に言われた言葉をもとに、自分の仕事だからこそ伝えられる一言が1本できます。</p>
     </li>
   </ol>
 
-  <p class="eyebrow" style="margin-top:8px">ほかにも、同じページに置いているもの</p>
-
-
-  <div class="card spec">
-    <h3>収録内容</h3>
-    <dl>
-      <dt>📄 読みもの・✏️ 書き込むワーク｜上の3つ以外に7本</dt>
-      <dd>なぜ、良いものほど伝わらないのか<br>
-        値上げできないのは、優しさのせいではありません<br>
-        1900人集めて分かった、煽ってはいけない理由<br>
-        値上げしないで、売上を上げる ― 値段の階段のつくり方<br>
-        売り込まずにお客様が集まる7日間計画<br>
-        「オーガニックって結局なに？」に、自分の言葉で答えられるようになる<br>
-        「この認証、大丈夫ですか？」に、その場で答えられる1枚（印刷可）</dd>
-      <dt>🎧 音声｜毎朝の配信</dt>
-      <dd><b>スナックなつこ</b><br>ドイツからの毎日配信。オーガニックの伝え方、事業の考え方、日々の判断を声で話しています。</dd>
-      <dt>＋ 読みもの『誰から学ぶかが、すべてを決める』全3章</dt>
-      <dd>教材ページに全文を掲載しています。教材は随時追加していて、追加のたびに同じページが新しくなります。</dd>
-    </dl>
-    <p class="note" style="margin-top:22px">スマホでそのまま視聴・記入できます。印刷して使えるものもあります。</p>
-  </div>
-
-  <p class="note">読むだけでも使えるものにしています。順番に並べてありますが、気になるところから読んでいただいて構いません。</p>
+  <p class="note">ほかにも、読みもの・書き込みワーク7本と、毎朝の音声配信、読みもの『誰から学ぶかが、すべてを決める』を同じページに置いています。スマホでそのまま視聴・記入できます。</p>
 </section>
 
 <!-- ============ 7.5 実績 ============ -->
@@ -571,22 +591,8 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
   <p class="punch">オーガニックが広がることが、<br>社会を豊かにする。</p>
   <p>オーガニック起業家が豊かになるということは、素晴らしいものを市場に循環させ、オーガニックを広げているということ。事業というツールを使ってオーガニックを広げる人は、<span class="hl">その地域の水・土・生態系を守り、未来世代のことを思っている</span>人です。</p>
   <p>地域は全世界とつながっているから、それは地球全体の未来、私たちの未来そのものを守っていることでもある。<span class="mark">だから、彼ら彼女らが豊かになることが決定的に大事</span>だと思っています。</p>
+  <p>自分の言葉でオーガニックを伝える人が増え、その人の事業が続いていくこと。それが、「オーガニックが、あたりまえ。」な社会への一番確かな道だと思っています。</p>
   <p class="punch">オーガニック起業家が<br>豊かになるのは、正しい。</p>
-</section>
-
-<!-- ============ 8.7 オーガニック入門書 ============ -->
-<section>
-  <p class="eyebrow">BOOK</p>
-  <h2 class="sec">著書のご紹介</h2>
-  <div class="card book-card">
-    <img class="book-cover" src="https://iob.bio/images/book.jpg" alt="社会のために生きたいあなたへ オーガニック入門書｜レムケなつこ 著">
-    <p class="book-tag">レムケなつこ 著</p>
-    <h3>社会のために生きたいあなたへ<br>― オーガニック入門書</h3>
-    <p class="book-badge-wrap"><span class="book-badge">★ Amazon Kindle 総合1位獲得</span></p>
-    <p class="voices">「オーガニックを事業に取り入れたいけれど、自分の知識に自信がない」<br>「オーガニックのよさを伝えたいけれど、うまく説明できない」<br>「社会をよくしたい想いはあるものの、どう行動すべきかわからない」</p>
-    <p class="lead-in">―― そんな起業家やプレ起業家へ向けて、ドイツで15年積み上げてきたオーガニックのエビデンスと、「すべての命が幸せになる仕組み」としてのオーガニックを、入門書として一冊にまとめました。</p>
-    <a class="btn" href="https://amzn.asia/d/0b1NWjkc" target="_blank" rel="noopener">Amazonで購入する →</a>
-  </div>
 </section>
 
 <!-- ============ 8.8 3つの段階 ============ -->
@@ -604,51 +610,24 @@ section.band-black .punch,section.band-orange .punch{color:#f5c9a8}
     </li>
     <li data-n="3" class="is-last">
       <h4>この先</h4>
-      <p>値段で比べられない伝え方を、自分の言葉で語れるようになる。数字やフォロワー数を追わなくても、応援してくれる人に囲まれて事業を続けていける。</p>
+      <p>オーガニックを、自分の言葉で語れるようになる。同じ問いを持つ仲間と、確かめ合いながら続けていける。</p>
     </li>
   </ul>
 </section>
 
-<!-- ============ 8.9 受講生の声（実素材：書籍・インタビュー動画より） ============ -->
+<!-- ============ 8.7 オーガニック入門書 ============ -->
 <section>
-  <p class="eyebrow">VOICE</p>
-  <h2 class="sec">応援される人に、<br>変わっていきました</h2>
-
-  <div class="voice-card">
-    <p class="voice-name">猿田一生さん</p>
-    <p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p>
-    <blockquote>従業員時代はこの想いが理解されず、日々孤独を感じていました。</blockquote>
-    <blockquote>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</blockquote>
-    <blockquote>そして家族のように何でも話し合える仲間と出会えたことが、私にとっては一生の宝です。</blockquote>
-    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
+  <p class="eyebrow">BOOK</p>
+  <h2 class="sec">著書のご紹介</h2>
+  <div class="card book-card">
+    <img class="book-cover" src="https://iob.bio/images/book.jpg" alt="社会のために生きたいあなたへ オーガニック入門書｜レムケなつこ 著">
+    <p class="book-tag">レムケなつこ 著</p>
+    <h3>社会のために生きたいあなたへ<br>― オーガニック入門書</h3>
+    <p class="book-badge-wrap"><span class="book-badge">★ Amazon Kindle 総合1位獲得</span></p>
+    <p class="voices">「オーガニックを事業に取り入れたいけれど、自分の知識に自信がない」<br>「オーガニックのよさを伝えたいけれど、うまく説明できない」<br>「社会をよくしたい想いはあるものの、どう行動すべきかわからない」</p>
+    <p class="lead-in">―― そんな起業家やプレ起業家へ向けて、ドイツで15年積み上げてきたオーガニックのエビデンスと、「すべての命が幸せになる仕組み」としてのオーガニックを、入門書として一冊にまとめました。</p>
+    <a class="btn" href="https://amzn.asia/d/0b1NWjkc" target="_blank" rel="noopener">Amazonで購入する →</a>
   </div>
-
-  <div class="voice-card">
-    <p class="voice-name">川田むつみさん</p>
-    <p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」（千葉県松戸市）代表<br>株式会社かわた 取締役</p>
-    <blockquote>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</blockquote>
-    <blockquote>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</blockquote>
-    <p class="voice-src">出典：著書『社会のために生きたいあなたへ オーガニック入門書』体験談より</p>
-  </div>
-
-  <div class="voice-card">
-    <p class="voice-name">柳田夕希さん</p>
-    <p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p>
-    <blockquote>オーガニックという言葉は、美容とか健康にいいということしか私は知らなくて。そういうところじゃなくて、オーガニックが社会を変える仕組み、社会全体を幸せにする仕組みということを学んだのが、すごく自分の中で気づきがありました。</blockquote>
-    <blockquote>入ってなかったら、本当にビジネスも成り立たないですし、オーガニックのことを話せる仲間もいなかったと思います。</blockquote>
-    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=Ov4lZdxaHHI" target="_blank" rel="noopener">対談を見る →</a></p>
-  </div>
-
-  <div class="voice-card">
-    <p class="voice-name">村田枝里さん</p>
-    <p class="voice-role">北海道・余市町／有機農家・料理人</p>
-    <blockquote>もともと、オーガニックがいま世界で起きている問題の解決策になるという気持ちがありました。IOBに入って、その決意が揺るがないものになりましたね。</blockquote>
-    <blockquote>知識がないと選べない。選び方がわからない。知識があるということは、たくさんの選択肢の中から、自分の人生を決めていけるということ。</blockquote>
-    <blockquote>新しい扉が開けるよ。</blockquote>
-    <p class="voice-src">出典：受講生インタビュー動画『オーガニック専門家という生き方』より<br><a href="https://www.youtube.com/watch?v=OlyG-AKINbQ" target="_blank" rel="noopener">対談を見る →</a></p>
-  </div>
-
-  <p class="note">いずれも「オーガニック専門家コース」受講生の方です。ここに置いた言葉は、書籍とインタビュー動画で本人が語ったものをそのまま引用しています。</p>
 </section>
 
 <!-- ============ 9. 位置づけ ============ -->
