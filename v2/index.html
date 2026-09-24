@@ -401,9 +401,11 @@ section.t-sage{background:linear-gradient(180deg,#9aa98c,#bcc6ae) !important;col
 /* 案5 ORIGIN：リール風テロップ */
 .reel{margin:-52px calc(50% - 50vw) 36px;height:clamp(420px,120vw,620px);background:url(../images/natsuko.jpg) center 18%/cover;position:relative;display:flex;align-items:flex-end;justify-content:center}
 @media (min-width:700px){.reel{margin-top:-72px;background-size:auto 100%;background-color:#e9e9e7;background-repeat:no-repeat}}
-.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,26,20,0) 45%,rgba(36,26,20,.85) 100%)}
-.reel-cap{position:relative;z-index:2;text-align:center;font-weight:900;color:#fff;font-size:clamp(22px,6.4vw,30px);line-height:1.55;margin:0 16px 30px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
-.reel-cap em{font-style:normal;color:#ffe066}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,26,20,0) 40%,rgba(36,26,20,.35) 65%,#241a14 100%)}
+.reel-cap{position:relative;z-index:2;text-align:center;font-family:"Zen Old Mincho",serif;font-weight:600;color:#fff;font-size:clamp(21px,5.8vw,28px);line-height:1.8;letter-spacing:.08em;margin:0 16px 18px;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+.reel-cap small{display:block;font-family:"Noto Sans JP",sans-serif;font-weight:400;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.7);margin:0 0 12px}
+section.band-black{border-top:0 !important}
+
 .reel-top{position:absolute;top:20px;left:0;right:0;z-index:2;text-align:center;margin:0}
 .reel-top span{background:#fff;color:var(--ink);font-weight:700;font-size:13px;padding:4px 10px;border-radius:4px}
 /* MISSION：写真の帯 */
@@ -653,10 +655,8 @@ section.band-orange.t-photo .recap .recap-slogan{color:var(--accent) !important}
 <!-- ============ 8.5 なぜドイツIOBなのか ============ -->
 <section class="band-black">
   <div class="reel">
-    <p class="reel-top"><span>レムケなつこ</span></p>
-    <p class="reel-cap">なぜ、<em>ドイツIOB</em><br>オーガニックスクール<br>なのか</p>
+    <p class="reel-cap"><small>ORIGIN</small>なぜ、ドイツIOB<br>オーガニックスクールなのか</p>
   </div>
-  <p class="eyebrow">ORIGIN</p>
   <p>20代、JICA青年海外協力隊としてボリビアへ渡りました。担当地域だけ、栄養失調や依存症、乳児死亡率が突出して高い。共通していたのは、<span class="hl">大規模サトウキビ農園で働く出稼ぎ労働者たち</span>でした。</p>
   <p>帰国後に知ったのは、そのサトウキビの多くが白砂糖になり、当時の日本はその6割を輸入していたという事実です。加工食品や飲料を通じて、<span class="mark">自分自身が知らないうちにその仕組みの一部になっていました</span>。</p>
   <p>なんとかしたい一心で、海外の論文を読み漁るなかで出会ったのが「オーガニック」という仕組みでした。研究を深めるため、有機農業の本場であるドイツの大学院へ。そこで、<span class="hl">オーガニックなら社会の構造を変えられる</span>という確信に変わりました。</p>
