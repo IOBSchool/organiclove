@@ -192,6 +192,12 @@ section.band-orange .recap p{color:rgba(255,255,255,.88)}
 .transform-before li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ink-faint)}
 .transform-after li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:#fff}
 .transform-heading{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:17px;line-height:1.6;margin:10px 0 14px}
+.transform-after ul{margin:18px 0 0}
+.transform-after li{padding:0 0 15px 26px;margin:0 0 15px;border-bottom:1px solid rgba(255,255,255,.15)}
+.transform-after li:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.transform-after li::before{content:"✓";background:none;width:auto;height:auto;left:0;top:1px;color:#ffb088;font-weight:700;font-size:15px;border-radius:0}
+.win-h{display:block;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(16px,4.6vw,18.5px);line-height:1.5;margin:0 0 5px}
+.win-t{display:block;font-size:12.5px;line-height:1.7;color:rgba(255,255,255,.72)}
 
 /* ---------- 実績スタッツ ---------- */
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 16px;text-align:center;margin:0 0 34px}
@@ -524,10 +530,10 @@ section.band-orange.t-photo .recap .recap-slogan{color:var(--accent) !important}
       <p class="tag">AFTER</p>
       <p class="transform-heading">学んだあと、<br>こう変わっていきます</p>
       <ul>
-        <li>「オーガニックって何？」と聞かれたとき、借り物の説明ではなく、世界の定義とエビデンスに裏付けられた、自分の言葉で答えられる</li>
-        <li>扱う商品やサービスを、なぜそれを選ぶのか、自分の基準で説明できる。お客様から「そういうことだったんですね」と言われる場面が増えていく</li>
-        <li>オーガニックのことを、もう一人で抱え込まなくていい。同じ問いを持つ仲間と出会い、確かめ合いながら学び続けていける</li>
-        <li>あなたの言葉に共感した人が、少しずつまわりに集まってくる。応援し、応援される関係のなかで、オーガニックの輪が広がっていく</li>
+        <li><span class="win-h">「何？」に、自分の言葉で答えられる</span><span class="win-t">借り物の説明ではなく、世界の定義とエビデンスを土台に。</span></li>
+        <li><span class="win-h">「そういうことだったんですね」</span><span class="win-t">扱うものを自分の基準で語れて、お客様の反応が変わる。</span></li>
+        <li><span class="win-h">もう、ひとりで抱えない</span><span class="win-t">同じ問いを持つ仲間と、確かめ合いながら学び続けられる。</span></li>
+        <li><span class="win-h">共感した人が、集まってくる</span><span class="win-t">応援し、応援される関係のなかで、オーガニックの輪が広がっていく。</span></li>
       </ul>
       <p class="after-close">あなたの言葉から、<br>お客様にとってのオーガニックの<br>見え方が変わっていきます。</p>
     </div>
