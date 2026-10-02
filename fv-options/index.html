@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>organiclove FV 8パターン比較｜もどかしさ→卒業の見せ方</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#f26b3b;
+    --accent-l:#ff9a6b;
+    --ink:#2b231d;
+    --bg:#f3efe9;
+    --card:#fffdfa;
+    --border:#e5ddd1;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN",sans-serif;
+    line-height:1.7;-webkit-text-size-adjust:100%}
+  .head{max-width:980px;margin:0 auto;padding:30px 18px 6px}
+  .head h1{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:21px;margin:0 0 8px;letter-spacing:.02em}
+  .head p{margin:0;font-size:13.5px;color:#6b6054}
+  .head .note{margin-top:10px;font-size:12.5px;color:#8a7f72}
+  .grid{max-width:1240px;margin:0 auto;padding:18px 16px 60px;
+    display:grid;gap:26px 20px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+  .card{margin:0}
+  .cap{font-size:12.5px;font-weight:700;color:var(--ink);margin:0 0 3px;letter-spacing:.01em}
+  .cap .n{color:var(--accent);margin-right:6px}
+  .desc{font-size:11.5px;color:#8a7f72;margin:0 0 9px;min-height:2.6em}
+
+  /* ---- phone mockup（共通） ---- */
+  .ph{position:relative;width:100%;aspect-ratio:320/580;overflow:hidden;color:#fff;
+    background:#6d7a5c url(../images/hero_allgaeu.jpg) 70% center/cover;
+    border-radius:16px;box-shadow:0 12px 30px rgba(60,42,28,.20)}
+  .ph::after{content:"";position:absolute;inset:0;z-index:1;
+    background:
+      linear-gradient(103deg,rgba(0,0,0,.52) 0%,rgba(0,0,0,.24) 42%,rgba(0,0,0,0) 66%),
+      linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 74%,rgba(0,0,0,.52) 100%)}
+  .ph>*{position:relative;z-index:2}
+  .logo{position:absolute;right:14px;top:12px;width:72px;filter:brightness(0) invert(1);opacity:.95}
+  .eyebrow{position:absolute;left:16px;top:14px;margin:0;font-size:10.5px;line-height:1.75;
+    max-width:19em;text-shadow:0 1px 8px rgba(0,0,0,.6);font-weight:500}
+  .eyebrow b{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:11.5px;white-space:nowrap}
+  .copy{position:absolute;left:16px;right:14px;top:80px}
+  .catch{margin:0;font-family:"Zen Old Mincho",serif;font-weight:700;
+    font-size:27px;line-height:1.4;letter-spacing:.02em;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+  .sub{margin:16px 0 0;font-family:"Zen Old Mincho",serif;font-weight:600;
+    font-size:17px;line-height:1.55;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+
+  /* ---- P1 同格・最大（最も目立つ） ---- */
+  .p1 .sub{font-size:24px;font-weight:700}
+  /* ---- P2 蛍光マーカー ---- */
+  .p2 .sub{display:inline;font-size:19px;font-weight:700;text-shadow:none;
+    background:linear-gradient(transparent 60%,rgba(242,107,59,.9) 60%);
+    -webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 2px;line-height:1.9}
+  /* ---- P3 ダーク帯ボックス ---- */
+  .p3 .sub{display:inline-block;font-size:18px;font-weight:600;text-shadow:none;
+    background:rgba(34,23,16,.60);border-radius:9px;padding:9px 13px}
+  /* ---- P4 標準バランス（山口さん原型） ---- */
+  .p4 .sub{font-size:19px;font-weight:600}
+  /* ---- P5 やや控えめ ---- */
+  .p5 .sub{font-size:14.5px;font-weight:500;opacity:.95}
+  /* ---- P6 最も控えめ ---- */
+  .p6 .sub{font-size:12px;font-weight:400;opacity:.9;letter-spacing:.05em}
+  /* ---- P7 「卒業できます」だけ色強調 ---- */
+  .p7 .sub{font-size:18px;font-weight:600}
+  .p7 .sub .hl{color:var(--accent-l);font-weight:700;font-size:1.16em;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+  /* ---- P8 区切り線で分離（締めの一言） ---- */
+  .p8 .sub{font-size:18px;font-weight:600;margin-top:28px;padding-top:14px;display:inline-block;
+    border-top:1px solid rgba(255,255,255,.55)}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>organiclove FV ― 8パターン比較</h1>
+  <p>山口さんがChatGPTでシェアしてくれたヘッダーデザインを土台に、<b>「そんなもどかしさ、ここで卒業できます。」の目立ち具合</b>だけを8段階で振りました。キャッチ・呼びかけ・写真・ロゴ位置は全パターン共通です。</p>
+  <p class="note">※スマホ縦長での見え方のモック。文字はすべて実テキスト（画像ではない）。採用が決まったら、そのままv3のヘッダーに反映します。</p>
+</div>
+
+<div class="grid">
+
+  <figure class="card">
+    <p class="cap"><span class="n">P1</span>同格・最大（最も目立つ）</p>
+    <p class="desc">キャッチとほぼ同じ大きさ。もどかしさ→卒業を一番強く押し出す。</p>
+    <div class="ph p1">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P2</span>蛍光マーカー強調</p>
+    <p class="desc">オレンジのマーカーを敷いて視線を集める。ポップに目立つ。</p>
+    <div class="ph p2">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P3</span>ダーク帯ボックス</p>
+    <p class="desc">半透明の帯にのせてブロックで独立させる。写真が明るくても読める。</p>
+    <div class="ph p3">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P4</span>標準バランス（山口さん原型）</p>
+    <p class="desc">ChatGPT版に最も近い。キャッチを主役に、サブは自然に添える。</p>
+    <div class="ph p4">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P5</span>やや控えめ</p>
+    <p class="desc">サブは小さめ。キャッチの余韻として静かに置く。</p>
+    <div class="ph p5">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P6</span>最も控えめ（小さく静か）</p>
+    <p class="desc">ほぼ囁き。キャッチだけで勝負し、サブは補足に徹する。</p>
+    <div class="ph p6">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P7</span>「卒業できます」だけ色強調</p>
+    <p class="desc">サブ全体は中くらい。希望の語だけオレンジで一点強調。</p>
+    <div class="ph p7">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="card">
+    <p class="cap"><span class="n">P8</span>区切り線で分離</p>
+    <p class="desc">キャッチと線で区切り、締めの一言として独立させる。</p>
+    <div class="ph p8">
+      <img class="logo" src="../images/logo_orange.png" alt="IOB">
+      <p class="eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+      <div class="copy">
+        <h3 class="catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h3>
+        <p class="sub">そんなもどかしさ、<br>ここで<span class="hl">卒業できます。</span></p>
+      </div>
+    </div>
+  </figure>
+
+</div>
+</body>
+</html>
