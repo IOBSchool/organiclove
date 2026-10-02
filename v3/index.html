@@ -198,6 +198,12 @@ section.band-orange .recap p{color:rgba(255,255,255,.88)}
 .transform-after li::before{content:"✓";background:none;width:auto;height:auto;left:0;top:1px;color:#ffb088;font-weight:700;font-size:15px;border-radius:0}
 .win-h{display:block;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(16px,4.6vw,18.5px);line-height:1.5;margin:0 0 5px}
 .win-t{display:block;font-size:12.5px;line-height:1.7;color:rgba(255,255,255,.72)}
+.transform-before ul{margin:18px 0 0}
+.transform-before li{padding:0 0 15px 26px;margin:0 0 15px;border-bottom:1px solid rgba(85,55,39,.14)}
+.transform-before li:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.transform-before li::before{content:"✕";background:none;width:auto;height:auto;left:0;top:1px;color:var(--ink-faint);font-weight:700;font-size:13px;border-radius:0}
+.transform-before .win-h{color:var(--ink)}
+.transform-before .win-t{color:var(--ink-faint)}
 
 /* ---------- 実績スタッツ ---------- */
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 16px;text-align:center;margin:0 0 34px}
@@ -518,9 +524,9 @@ section.band-orange.t-photo .recap .recap-slogan{color:var(--accent) !important}
       <p class="tag">BEFORE</p>
       <p class="transform-heading">「オーガニックって何？」と<br>聞かれると、言葉に詰まる</p>
       <ul>
-        <li>お店、畑、サロン、講師・専門職としての実績はあるのに、オーガニックのことになると「まだ素人なので」と言ってしまう</li>
-        <li>エビデンスや資格を集めているのに、自分の言葉で語れる自信がない</li>
-        <li>オーガニックのことを話せる相手が身近にいない。パートナーや親にも、うまく説明できない</li>
+        <li><span class="win-h">つい「まだ素人なので」と言ってしまう</span><span class="win-t">お店・畑・サロン・講師としての実績は、あるのに。</span></li>
+        <li><span class="win-h">自分の言葉で語れる自信がない</span><span class="win-t">エビデンスも資格も、集めてきたのに。</span></li>
+        <li><span class="win-h">話せる相手が、身近にいない</span><span class="win-t">パートナーや親にも、うまく説明できない。</span></li>
       </ul>
       <p class="before-close">そんなもどかしさと孤独を抱える日々は、<br>今日までです。</p>
     </div>
@@ -676,7 +682,7 @@ section.band-orange.t-photo .recap .recap-slogan{color:var(--accent) !important}
       </div>
     </div>
     <p>20代の頃、ボリビアでJICA青年海外協力隊として、メキシコでJICA専門家として、途上国の生産者支援に携わりました。そこでオーガニックの社会的な意義に気づき、いまはドイツで学校を運営しています。</p>
-    <p>教えているのは、認証の知識だけではありません。自分が信じているものを、値段で比べられない形で届けるところまでを、一続きにして渡しています。<span class="mark">オーガニックは、すべての命を幸せにする仕組み</span>。それを文化にするところまでが、私の仕事だと思っています。</p>
+    <p>教えているのは、知識だけではありません。自分が信じているものを、値段で比べられない形で届けるところまでを、一続きにして渡しています。<span class="mark">オーガニックは、すべての命を幸せにする仕組み</span>。それを文化にするところまでが、私の仕事だと思っています。</p>
     <ul class="check creds">
       <li>「ドイツIOBオーガニックスクール」創立。創業7年で延べ1900人以上が在籍する日本最大のオーガニックコミュニティに成長</li>
       <li>慶應義塾大学経済学部卒業</li>
