@@ -355,14 +355,15 @@ section.band-orange .recap .recap-slogan .nw{white-space:nowrap}
 
 /* ================= Instagram寄せデザイン（2026-09-24） ================= */
 /* 案1 FV：写真×縦書き */
-.hero{position:relative;height:min(94svh,760px);min-height:560px;background:#6d7a5c url(../images/hero_allgaeu.jpg) 78% center/cover;color:#fff;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.28) 0%,rgba(0,0,0,.02) 30%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.6) 100%)}
-.hero-logo{position:absolute;left:18px;top:16px;z-index:2;width:108px;filter:brightness(0) invert(1);opacity:.95}
-.hero-v{position:absolute;left:18px;top:76px;z-index:2;writing-mode:vertical-rl;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(28px,8.4vw,44px);line-height:1.5;letter-spacing:.08em;margin:0;text-shadow:0 2px 14px rgba(0,0,0,.45)}
-.hero-v .s{font-size:1.32em}
-.hero-tag{position:absolute;right:18px;bottom:24px;z-index:2;margin:0;text-align:right;font-size:13px;line-height:1.85;max-width:18em;text-shadow:0 1px 8px rgba(0,0,0,.55);font-weight:500}
-.hero-tag b{white-space:nowrap}
-.hero-tag b{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:15px}
+.hero{position:relative;height:min(94svh,760px);min-height:560px;background:#6d7a5c url(../images/hero_allgaeu.jpg) 72% center/cover;color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(103deg,rgba(0,0,0,.52) 0%,rgba(0,0,0,.24) 42%,rgba(0,0,0,0) 66%),linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 74%,rgba(0,0,0,.52) 100%)}
+.hero>*{position:relative;z-index:2}
+.hero-logo{position:absolute;right:18px;top:16px;z-index:3;width:100px;filter:brightness(0) invert(1);opacity:.95}
+.hero-eyebrow{position:absolute;left:20px;top:18px;z-index:3;margin:0;font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;line-height:1.85;max-width:min(calc(100vw - 40px),27em);text-shadow:0 1px 10px rgba(0,0,0,.6);font-weight:500}
+.hero-eyebrow b{font-weight:700;font-size:14.5px;white-space:nowrap}
+.hero-copy{position:absolute;left:20px;right:16px;top:50%;transform:translateY(-50%);z-index:2;max-width:min(82%,600px)}
+.hero-catch{margin:0;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(32px,9.2vw,54px);line-height:1.4;letter-spacing:.02em;text-shadow:0 2px 16px rgba(0,0,0,.5)}
+.hero-sub-h{margin:18px 0 0;font-family:"Zen Old Mincho",serif;font-weight:500;font-size:clamp(17px,5vw,26px);line-height:1.55;letter-spacing:.02em;text-shadow:0 2px 13px rgba(0,0,0,.5);opacity:.96}
 .fv{padding:28px 0 0;text-align:left}
 .fv .fv-h{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(19px,5.4vw,26px);line-height:1.7;margin:0 0 16px;color:var(--ink)}
 .fv .sub{margin:0 0 16px;font-size:14.5px;line-height:2;color:var(--ink-soft)}
@@ -431,15 +432,17 @@ section.band-orange.t-photo .recap .recap-slogan{color:var(--accent) !important}
 <!-- ============ 1. ファーストビュー（案1：写真×縦書き） ============ -->
 <header class="hero">
   <img class="hero-logo" src="../images/logo_orange.png" alt="Institut für Organic Business">
-  <h1 class="hero-v">もどかしさを、<br><span class="s">卒業する。</span></h1>
-  <p class="hero-tag"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、<br>日々がんばっているあなたへ</p>
+  <p class="hero-eyebrow"><b>「オーガニックが、あたりまえ。」</b><br>な社会にしたいと、日々がんばっているあなたへ</p>
+  <div class="hero-copy">
+    <h1 class="hero-catch">「今の自分じゃ<br>オーガニックの<br>本当の良さを<br>伝え切れない…」</h1>
+    <p class="hero-sub-h">そんなもどかしさ、<br>ここで卒業できます。</p>
+  </div>
 </header>
 
 <div class="wrap">
   <div class="fv">
     <p class="fv-h"><span class="nw">サロン・教室・お店・講師・専門職で、</span><br><span class="nw">オーガニックを扱っているあなたへ。</span></p>
 
-    <p class="sub"><span class="em">「今の自分じゃ、オーガニックの</span><br><span class="em">本当の良さを伝えきれない…」</span><br>そんなもどかしさ、<br>ここで卒業できます。</p>
     <p class="sub">オーガニックは、体にいいものを選ぶことだけじゃない。<br>「どういう社会をつくりたいか」という問いそのもの。</p>
     <p class="sub">確かな知識を身につけると、<br>伝え方の技術より先に、自信が戻ってきます。</p>
     <p class="sub">ドイツの大学院で有機農業を研究し、<br>延べ1,900人以上が学ぶ「ドイツIOBオーガニックスクール」を創立した私が、<br>その最初の授業をそのままお届けします。</p>
