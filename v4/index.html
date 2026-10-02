@@ -66,14 +66,6 @@ p:last-child{margin-bottom:0}
 .core p{margin:0 0 12px;font-size:14.5px;line-height:1.95;color:var(--ink)}
 .core p:last-child{margin:0}
 
-/* ---------- 卵の写真＋核文 ---------- */
-.egg-band{position:relative;margin:28px calc(50% - 50vw) 0;height:clamp(320px,92vw,460px);background:#8a7a5c url(../images/eggs.jpg) center 60%/cover;display:flex;align-items:flex-end;color:#fff}
-.egg-band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.62) 100%)}
-.egg-band .photo-cap{z-index:2}
-.egg-text{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px 26px}
-.egg-big{margin:0 0 8px;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(24px,7vw,34px);line-height:1.45;text-shadow:0 2px 12px rgba(0,0,0,.45)}
-.egg-small{margin:0;font-size:14px;line-height:1.85;text-shadow:0 1px 8px rgba(0,0,0,.5)}
-
 /* ---------- sections ---------- */
 section{padding:52px 0}
 section+section{border-top:1px solid var(--border)}
@@ -236,15 +228,12 @@ footer .sns a{font-weight:500}
 
 <div class="wrap">
   <div class="fv">
-    <p class="sub">自分の言葉で話すための最初の授業を、<span class="em">無料で公開します。</span></p>
-    <p class="trust">ドイツの大学院・食品研究所で有機農業を研究し、延べ1,900人以上が学ぶスクールを創立した、レムケなつこの初回授業</p>
-  </div>
+    <p class="sub">世界の定義と背景から、オーガニックの全体像を学び、<span class="em">「私はこう考える。だから、これを届けたい」</span>と自分の言葉で話すための最初の授業を、無料で公開します。</p>
+    <p class="trust">ドイツの大学院・食品研究所で有機農業を研究し、延べ1,900人以上が学ぶスクールを創立したレムケなつこの初回授業です。</p>
 
-  <div class="egg-band">
-    <p class="photo-cap">ドイツ・アルゴイ地方の暮らし</p>
-    <div class="egg-text">
-      <p class="egg-big">話し方の問題では、<br>ありません。</p>
-      <p class="egg-small">オーガニックの全体像が、<br>自分の中で一本につながっていないから。</p>
+    <div class="core">
+      <p>伝えられないのは、話し方が下手だからではありません。オーガニックの全体像が、自分の中で一本につながっていないからです。</p>
+      <p>全体像がつながると、<span class="em">「私はこう考える。だから、これを届けている」</span>と、自分の言葉で話せるようになります。</p>
     </div>
   </div>
 </div>
@@ -254,8 +243,11 @@ footer .sns a{font-weight:500}
 <!-- ============ 1b. 最初のフォーム（上部配置） ============ -->
 <section id="form" style="padding-top:32px">
   <div class="formbox">
-    <h2>次に聞かれたとき、<br>自分の言葉で答えるための<br>最初の授業</h2>
-    <p class="lead">受講生が最初に学ぶ授業動画を、<br>登録後すぐに見られます。</p>
+    <h2>次に「オーガニックって何？」と聞かれたとき、自分の言葉で答えるための最初の授業</h2>
+    <ul class="form-picks">
+      <li>オーガニック専門家コースで、受講生が最初に学ぶ授業動画を、そのままお渡しします</li>
+      <li>登録後すぐに見られます</li>
+    </ul>
     <form class="optin" novalidate>
       <div class="field">
         <label for="name">お名前</label>
@@ -268,7 +260,7 @@ footer .sns a{font-weight:500}
       <button class="btn" type="submit">無料の授業動画を受け取る</button>
       <div class="err"></div>
     </form>
-    <p class="fineprint">授業動画のご案内メールが届きます（届かないときは迷惑メールフォルダへ）。配信はいつでも解除できます。</p>
+    <p class="fineprint">登録後すぐに、授業動画のページをご案内するメールが届きます。届かない場合は、迷惑メールフォルダをご確認ください。このあと、オーガニックの届け方についてのメールをお送りします。配信はいつでも解除できます。</p>
   </div>
 </section>
 
