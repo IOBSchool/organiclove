@@ -405,18 +405,6 @@ footer{padding-bottom:84px}
   </div>
 </section>
 
-<section style="padding-top:8px">
-  <div class="formbox">
-    <form class="optin" novalidate>
-      <div class="field"><label for="name4">お名前</label><input type="text" id="name4" name="name" autocomplete="name" required></div>
-      <div class="field"><label for="email4">メールアドレス</label><input type="email" id="email4" name="email" autocomplete="email" inputmode="email" required></div>
-      <button class="btn" type="submit">無料の授業動画を受け取る</button>
-      <div class="err"></div>
-    </form>
-    <p class="fineprint">登録後すぐに、授業動画を無料でお届けします。配信はいつでも解除できます。</p>
-  </div>
-</section>
-
 <section class="alt">
   <p class="eyebrow">REASON<span class="ja">なぜ、IOBで学ぶと届くのか</span></p>
   <h2 class="sec">IOBでは、<br>3つをつなげて学びます</h2>
@@ -616,10 +604,10 @@ Array.prototype.forEach.call(document.querySelectorAll('form.optin'), function(f
 /* 画面下の固定ボタン：フォームが見えている間と、最上部では隠す */
 (function(){
   var bar=document.getElementById('sticky'); if(!bar) return;
-  var forms=document.querySelectorAll('.formbox'), visible=0;
-  function upd(){ bar.classList.toggle('on', window.scrollY>500 && visible===0); }
+  var forms=document.querySelectorAll('.formbox'), seen=new Set();
+  function upd(){ bar.classList.toggle('on', window.scrollY>500 && seen.size===0); }
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ visible+= e.isIntersecting?1:-1; }); upd(); });
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) seen.add(e.target); else seen['delete'](e.target); }); upd(); });
     Array.prototype.forEach.call(forms,function(f){ io.observe(f); });
   }
   window.addEventListener('scroll',upd,{passive:true}); upd();
