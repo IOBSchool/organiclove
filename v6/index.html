@@ -89,6 +89,9 @@ ul.check li::before{content:"";position:absolute;left:4px;top:13px;width:7px;hei
 .formbox{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:28px 20px}
 .formbox h2{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:18.5px;line-height:1.65;margin:0 0 10px;text-align:center;text-wrap:balance}
 .formbox .lead{font-size:13.5px;color:var(--ink-soft);text-align:center;margin:0 0 22px;line-height:1.95}
+.formbox .aud{font-size:13.5px;color:var(--ink-soft);text-align:center;margin:0 0 20px;padding:0 0 18px;border-bottom:1px solid var(--border);line-height:1.95}
+.formbox .aud span{display:block;text-wrap:balance}
+.formbox .aud span+span{margin-top:6px}
 label{display:block;font-size:13px;color:var(--ink-soft);margin:0 0 7px;letter-spacing:.04em}
 input[type=text],input[type=email]{
   width:100%;padding:15px 14px;font-size:16px;line-height:1.5;
@@ -324,7 +327,7 @@ footer{padding-bottom:84px}
   </div>
 
 <section id="form" style="padding-top:32px">
-  <div class="formbox"><h2>届けたい人に届く言葉を考える、最初の授業</h2><ul class="form-picks"><li>オーガニック専門家コースで最初に学ぶ授業動画を、そのままお渡しします</li><li>授業のあとに5通のメールをお送りし、自分なら何を伝えるかを考えていきます</li></ul><form class="optin" novalidate>
+  <div class="formbox"><p class="aud"><span>この無料授業は、オーガニックの良さを仕事や活動を通して人に届けている方、これからそうした活動を始めたい方に向けた授業です。</span><span>「何を知るか」だけでなく、「自分なら誰に、どんな言葉で届けるか」を考えていきます。</span></p><h2>届けたい人に届く言葉を考える、最初の授業</h2><ul class="form-picks"><li>実際のオーガニック専門家コースでも最初に扱う授業動画を、そのままお渡しします</li><li>授業のあとに5通のメールをお送りし、「オーガニックって何がいいんですか？」と聞かれたときの、自分なりの答えを一文書くところまで進みます</li></ul><form class="optin" novalidate>
       <div class="field"><label for="name1">お名前</label><input type="text" id="name1" name="name" autocomplete="name" required></div>
       <div class="field"><label for="email1">メールアドレス</label><input type="email" id="email1" name="email" autocomplete="email" inputmode="email" required></div>
       <button class="btn" type="submit">無料の授業動画を受け取る</button>
@@ -560,6 +563,13 @@ document.getElementById('cr').textContent =
 var GAS_URL = "https://script.google.com/macros/s/AKfycbwV4eF7i4VXf4bl_PFZLyRzRngR15VHOt2-vUVXSnnggN8MZImsFCT26Cm6psEoEMLX7A/exec";
 var THANKS_URL = "../thanks/";
 var BTN_LABEL = "無料の授業動画を受け取る";
+/* 流入元の計測：リンクの ?src=（英数字・ハイフン・アンダースコア、30字まで）を流入元に付ける。未指定なら従来どおり */
+var SRC_TAG = (function(){
+  try {
+    var v = new URLSearchParams(location.search).get('src') || '';
+    return /^[A-Za-z0-9_-]{1,30}$/.test(v) ? '|' + v : '';
+  } catch(e) { return ''; }
+})();
 
 Array.prototype.forEach.call(document.querySelectorAll('form.optin'), function(form){
   var btn = form.querySelector('button');
@@ -589,7 +599,7 @@ Array.prototype.forEach.call(document.querySelectorAll('form.optin'), function(f
       method:'POST',
       headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
       body:'payload=' + encodeURIComponent(JSON.stringify({
-        name:name, email:email, source:'organiclove-v6', ref:document.referrer||''
+        name:name, email:email, source:'organiclove-v6'+SRC_TAG, ref:document.referrer||''
       }))
     })
     .then(function(r){ return r.json(); })
