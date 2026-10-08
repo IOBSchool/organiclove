@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>今、オーガニックを何のために学びたいですか？｜ドイツIOBオーガニックスクール</title>
+<meta name="description" content="今のあなたに近い方を選んでください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f9f7ef;
+  --surface:#ffffff;
+  --ink:#553727;
+  --ink-soft:#85634b;
+  --ink-faint:#a68b73;
+  --accent:#f26b3b;
+  --border:rgba(85,55,39,.16);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;min-height:100svh;display:flex;flex-direction:column}
+.wrap{width:100%;max-width:560px;margin:0 auto;padding:0 22px}
+header{padding:22px 0 0}
+header img{width:104px;height:auto}
+main{flex:1;display:flex;align-items:center;padding:28px 0 36px}
+h1{margin:0 0 10px;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:clamp(24px,7vw,32px);line-height:1.5;letter-spacing:.01em;text-wrap:balance}
+.sub{margin:0 0 26px;color:var(--ink-soft);font-size:15px}
+.choices{display:grid;gap:14px}
+.choice{display:block;text-decoration:none;color:inherit;background:var(--surface);border:2px solid var(--accent);border-radius:14px;padding:18px 48px 18px 20px;position:relative;-webkit-tap-highlight-color:transparent;transition:background .15s,transform .15s}
+.choice:active{background:#fff3ec;transform:scale(.99)}
+.choice:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.choice::after{content:"→";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:22px;font-weight:700}
+.choice-t{display:block;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:clamp(19px,5.4vw,22px);line-height:1.5;margin-bottom:4px}
+.choice-d{display:block;font-size:13.5px;line-height:1.7;color:var(--ink-soft)}
+.note{margin:22px 0 0;font-size:13px;color:var(--ink-faint);line-height:1.8}
+footer{padding:0 0 28px;font-size:11.5px;color:var(--ink-faint);line-height:1.9}
+footer a{color:var(--ink-faint);margin-right:14px}
+@media (prefers-color-scheme:dark){:root{color-scheme:light}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap"><img src="../images/logo_orange.png" alt="ドイツIOBオーガニックスクール"></div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>今、オーガニックを何のために学びたいですか？</h1>
+    <p class="sub">今のあなたに近い方を選んでください。</p>
+    <div class="choices">
+      <a class="choice" id="go-life" href="../organic-life/">
+        <span class="choice-t">暮らしの中でもっと知りたい</span>
+        <span class="choice-d">食・環境・毎日の暮らしについて学びたい方</span>
+      </a>
+      <a class="choice" id="go-pro" href="../">
+        <span class="choice-t">人に伝えられるようになりたい</span>
+        <span class="choice-d">仕事・活動・発信で届けている／届けたい方</span>
+      </a>
+    </div>
+    <p class="note">両方に当てはまる方は、今いちばん学びたい方からどうぞ。あとから変更できます。</p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <a href="https://iob.bio/">ドイツIOBオーガニックスクール</a><a href="https://iob.bio/policy.html">プライバシーポリシー</a>
+    <div id="cr"></div>
+  </div>
+</footer>
+<script>
+/* 行き先（公開時はここだけ本番URLに差し替える）
+   LIFE_URL＝暮らし向けLP／PRO_URL＝起業家向けLP（既存 /organiclove/） */
+var LIFE_URL = "../organic-life/";
+var PRO_URL  = "../";
+
+/* 流入元(?src=)は変えずに引き継ぎ、選んだ道を path=life|pro で付ける */
+(function(){
+  var src = "";
+  try {
+    var v = new URLSearchParams(location.search).get("src") || "";
+    if (/^[A-Za-z0-9_-]{1,30}$/.test(v)) src = v;
+  } catch(e) {}
+  function href(base, path){
+    var q = "path=" + path + (src ? "&src=" + encodeURIComponent(src) : "");
+    return base + (base.indexOf("?") > -1 ? "&" : "?") + q;
+  }
+  document.getElementById("go-life").href = href(LIFE_URL, "life");
+  document.getElementById("go-pro").href  = href(PRO_URL, "pro");
+  document.getElementById("cr").textContent = "© " + new Date().getFullYear() + " Institut für Organic Business GmbH. All Rights Reserved.";
+})();
+</script>
+</body>
+</html>
