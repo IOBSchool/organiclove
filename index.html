@@ -63,6 +63,11 @@ p:last-child{margin-bottom:0}
 .hero-sub-h .y{font-weight:500}
 .hero-sub-h.hero-voice{margin:26px 0 0;padding:0;border-bottom:0}
 .hero-voice2{margin:14px 0 0;font-size:15px;line-height:1.95;color:var(--ink)}
+.hero-quote{margin:18px 0 0;padding:16px 18px;background:#fff;border-left:4px solid var(--accent);border-radius:6px}
+.hero-quote .hq-lead{margin:0 0 8px;font-size:13px;color:var(--ink-soft)}
+.hero-quote blockquote{margin:0;font-family:"Zen Old Mincho",serif;font-weight:700;font-size:15.5px;line-height:1.85}
+.hero-quote .hq-name{margin:8px 0 12px;font-size:12.5px;color:var(--ink-soft)}
+.hero-quote .hq-stat{margin:0;font-size:14px;line-height:1.9;border-top:1px solid var(--border);padding-top:12px}
 .hero-voice3{margin:14px 0 0;padding:0 0 22px;border-bottom:1px solid rgba(0,0,0,.1);font-family:"Zen Old Mincho",serif;font-weight:700;font-size:clamp(16px,4.4vw,19px);line-height:1.85;text-wrap:balance}
 .hero-q .kd{font-weight:900;background:linear-gradient(transparent 58%,rgba(255,255,255,.32) 58%);padding:0 3px}
 /* ---------- first view 下段 ---------- */
@@ -331,11 +336,12 @@ footer{padding-bottom:84px}
 <div class="wrap">
   <p class="hero-sub-h hero-voice">「オーガニックって、何ですか？」とお客さまに聞かれて、言葉に詰まった。</p>
   <p class="hero-voice2">オーガニックを選んでいる理由まで、ちゃんと伝えたいのに、自分の感覚でしか話せない。聞いてくれたお客さまにも、なかなか伝わらない。</p>
+  <div class="hero-quote"><p class="hq-lead">同じ場面を、こう振り返った受講生がいます。</p><blockquote>「お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。」</blockquote><p class="hq-name">オーガニックスーパー運営　川田むつみさん</p><p class="hq-stat">聞かれて詰まるのは、珍しいことではありません。農林水産省の調査では、「有機・オーガニック」の内容を知らない人が、約6割でした。</p></div>
   <p class="hero-voice2 hero-voice3">そんな場面で、自分の言葉で答えるための軸になる考え方を、私が32分の授業にしました。</p>
   <div class="fv">
     <p class="fv-lead fv-title">オーガニックを、<br>自分の言葉で届けるための<br>最初の授業</p>
     <p class="sub">オーガニック専門家コースで、受講生が最初に学ぶ32分の授業を、そのまま無料で公開します。オーガニックの定義・歴史・世界の考え方を、授業で知ります。そのうえで、お客さまに聞かれたとき、何を拠りどころに答えればよいかが分かります。</p>
-    <p class="trust">ドイツの大学院・食品研究所で、有機農業・有機食品を研究。<br>延べ1,900人以上が学ぶドイツIOBオーガニックスクールを創立した、レムケなつこによる授業です。<br>自分の商品や活動にどう当てはめるかは、授業のあとの続きの学びで、一緒に考えていきます。</p>
+    <p class="trust">ドイツの大学院・食品研究所で、有機農業・有機食品を研究。<br>延べ1,900人以上が学ぶドイツIOBオーガニックスクールを創立した、レムケなつこによる授業です。<br>授業は、この1本です。自分の商品や活動に当てはめて、自分の言葉にしていく部分は、IOBのオーガニック専門家コースで学びます。</p>
   </div>
 
 <section id="form" style="padding-top:32px">
@@ -344,7 +350,7 @@ footer{padding-bottom:84px}
       <div class="field"><label for="email1">メールアドレス</label><input type="email" id="email1" name="email" autocomplete="email" inputmode="email" required></div>
       <button class="btn" type="submit">無料の授業動画を受け取る</button>
       <div class="err"></div>
-    </form><p class="fineprint">登録後すぐに、授業動画のページをご案内するメールが届きます。届かない場合は、迷惑メールフォルダをご確認ください。配信はいつでも解除できます。</p></div>
+    </form><p class="fineprint">登録すると、授業動画のページと、IOBからのメールが届きます。届かない場合は、迷惑メールフォルダをご確認ください。配信はいつでも解除できます。</p></div>
 </section>
 
 <section class="alt">
@@ -360,10 +366,9 @@ footer{padding-bottom:84px}
   <p>「有機」「無農薬」「健康にいい」。こうした分かりやすい特徴だけで話すと、お客さまには商品の違いは伝わります。ただ、なぜあなたがそれを選び、何を大切にしているのかまでは見えにくくなります。</p>
   <p>すると、お客さまとの会話が「いいものなのは分かるけれど、高いですね」で終わり、あなたの商品は価格で比べられやすくなります。</p>
   <p>そこで必要になるのが、あなたがこの商品や活動を通して、どんな人にどうなってほしいのか。その先に、どんな社会をつくりたいのか。そこまで含めて届けることです。</p>
-  <p>世界のオーガニックムーブメント（有機農業運動）の起点は1920年代、当時ドイツ領でした。ドイツでは今も、オーガニックは「我慢するもの」ではなく、暮らしの選択肢の一つとして当たり前にあります。私にとってオーガニックは、「何を買うか」と同時に、「どういう社会をつくりたいか」という問いでもあります。</p>
-  <p style="margin-top:28px"><b>2つ目は、届ける相手です。</b></p>
-  <p>どれだけ丁寧に届けても、大切にしているものが違う相手には、届きにくいことがあります。</p>
-  <p>農林水産省の消費者調査では、「有機・オーガニック」の内容を知らない人が、約6割でした。</p>
+  <p>私にとってオーガニックは、「何を買うか」と同時に、「どういう社会をつくりたいか」という問いでもあります。</p>
+  <p style="margin-top:28px"><b>2つ目は、お客さまの側です。</b></p>
+  <p>農林水産省の調査では、「有機・オーガニック」の内容を知らない人が、約6割でした。</p>
   <figure class="chart" style="margin-left:0;margin-right:0">
   <figcaption>「有機」「オーガニック」という言葉の内容を、どのくらい知っていたか</figcaption>
   <p class="big">61.4<small>%</small></p>
@@ -378,21 +383,12 @@ footer{padding-bottom:84px}
   </ul>
   <p class="src">出典：農林水産省「令和7年度 有機農業及び有機食品に関する意識・意向調査結果」（消費者3,000人・2025年11〜12月）。30.1%は「栽培方法・製造方法は知っていたが表示ルールは知らなかった」14.7%と「表示ルールは知っていたが栽培方法・製造方法は知らなかった」15.4%の合計。</p>
 </figure>
-  <p style="margin-top:22px">だからこそ、お客さまが知らないことを前提に、説明を増やす前に、あなたの考えから話すことが大切です。</p>
-  <p class="punch">あなたの考えまで話すと、お客さまに話す言葉が変わり、集まるお客さまも変わった受講生がいます。</p>
-</section>
-
-<section class="alt">
-  <p class="eyebrow">WHO<span class="ja">届けたい人</span></p>
-  <h2 class="sec">「あなたから選びたい」と<br>思う人がいます</h2>
-  <p>オーガニックには、自分や家族のためにきちんと知って選びたい人や、環境、生産者、次の世代まで考えて選んでいる人がいます。</p>
-  <p>そして、商品そのものだけでなく、「なぜあなたがそれを選び、届けているのか」という考えを知ることが、選ぶ理由の一つになる人もいます。</p>
+  <p style="margin-top:22px">お客さまの多くは、中身を知らないまま、「何ですか？」と聞いてきます。だからこそ、あなた自身がオーガニックの中身を知ったうえで、「私はこう考えて、これを届けています」と話せることが、土台になります。</p>
 </section>
 
 <section>
   <p class="eyebrow">WORDS<span class="ja">相手が受け取るのは、商品だけではありません</span></p>
   <h2 class="sec">メリットに加えて、目指す社会も話すようになり、集まるお客さまが変わった受講生がいます</h2>
-  <p>人は、耳にした言葉から「自分に関係があるか」を判断します。伝え方によって、相手の物差しが変わります。</p>
   <div class="compare">
   <div class="col a"><p class="ct">自分へのメリットを中心に伝える</p>
     <ol><li>「あなたにとって得です」と伝える</li><li>相手の物差しも「得かどうか」になる</li><li>比べやすいのは、価格</li></ol>
@@ -401,13 +397,12 @@ footer{padding-bottom:84px}
     <ol><li>「こんな社会になってほしいから、これを選んでいる」と伝える</li><li>同じ方向を見ている人と、出会いやすくなる</li><li>選ぶ理由が、価格だけではなくなる</li></ol>
     <p class="res">価格以外の物差しで、受け取られる</p></div>
 </div>
-  <p class="punch">目指す社会を伝えたことで、<br>同じ方向を向く人と出会えた受講生がいます。</p>
 </section>
 
 <section class="alt">
   <p class="eyebrow">WHY<span class="ja">なぜ、学ぶと話す言葉が変わるのか</span></p>
   <h2 class="sec">オーガニックを、社会や未来世代の目でも知ると、目指す社会を言葉にしやすくなる</h2>
-  <p>私が創立したドイツのオーガニックスクール「IOB」では、オーガニックの価値を、自分や消費者にとってのメリットだけでなく、社会や地球、未来世代にとって何がいいのかまで学びます。学びの半分は社会・地球・未来世代の話で、どちらの話もエビデンスをもとに学びます。</p>
+  <p>私が創立したドイツのオーガニックスクール「IOB」では、オーガニックの価値を、二つの面から学びます。自分や消費者にとってのメリット。そして、社会や地球、未来世代にとっての良さです。学びの半分は後者の話で、どちらもエビデンスをもとに学びます。</p>
   <div class="pull">「オーガニックが社会を変える仕組み、社会全体を幸せにする仕組み」<small>柳田夕希さん（IOBでの学びを振り返って）</small></div>
   <p>健康や安全という見方に、社会や未来世代という見方が加わると、お客さまに話せる言葉が増えていきます。知る範囲が広がると、「私はこの商品を通して、どんな社会をつくりたいのか」を、自分の言葉で考えられるようになります。</p>
   <ul class="steps"><li><b>学ぶ</b>知っている<br>ことが増える</li><li><b>言葉</b>使える言葉が<br>増える</li><li><b>届く</b>相手に合わせて<br>言葉を選べる</li></ul>
@@ -440,14 +435,14 @@ footer{padding-bottom:84px}
   <p>オーガニック専門家コースで学んだ、受講生本人の言葉です。</p>
 </section>
 <div class="vscroll"><div class="voice-card">
-    <div class="voice-head"><img class="voice-photo" src="images/voice_saruta.jpg" alt="猿田一生さん"><div><p class="voice-name">猿田一生さん</p><p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p></div></div>
-    <div class="voice-quote"><p>従業員時代はこの想いが理解されず、日々孤独を感じていました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</p><p>その結果、多くの方から支持を得ることができ、IOBのスクール生の方たちがたくさん来店してくれるようになったり、「ずっと、こんなサロンを探していた」と涙するお客様の姿を見たりしたときには、努力が報われたと感じました。</p></div></details></div>
-  </div><div class="voice-card">
-    <div class="voice-head"><img class="voice-photo" src="images/voice_uetsuru.webp" alt="上鶴恵子さん"><div><p class="voice-name">上鶴恵子さん</p><p class="voice-role">オーガニックショップSEN経営（山梨県富士川町）</p></div></div>
-    <div class="voice-quote"><p>お話を聞いてくれた経営者さんたちが「自分たちも力になりたい」と、たくさん入会してくれて、その後は畑の作業にも来てくださる。そんな活動の輪が広がりました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>勇気を持って一歩を踏み出して分かったことは、ちゃんと伝えれば、こんなに理解者が増えるんだということでした。</p></div></details></div>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_kawada.jpg" alt="川田むつみさん"><div><p class="voice-name">川田むつみさん</p><p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」運営（千葉県松戸市）</p></div></div>
+    <div class="voice-quote"><p>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</p><p>その学びを伝え続けた結果、私のインスタフォロワー数は4倍に成長。「オーガニックを正しく広めたい」と願う仲間たちとともに活動しながら、店舗も拡大し、ビジネスは順調に成長しています。（個人の感想です）</p></div></details></div>
   </div><div class="voice-card">
     <div class="voice-head"><span class="voice-photo voice-ph" aria-hidden="true">田</span><div><p class="voice-name">田中優介さん</p><p class="voice-role">農業法人を立ち上げ中（淡路島）</p></div></div>
     <div class="voice-quote"><p>家族に「なんで自然農という選択をしたの？なんで肥料とか農薬を使わないの？」と聞かれたとき、単純にそうしたいから、ということでしか説明ができませんでした。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>前までは、理解してくれないし、聞く耳も持たないというレベルでした。そんな人たちが、僕の活動を聞ける時間があれば「聞きに行くわ」と言ってくれた。すごい成果だなと思っています。</p></div></details></div>
+  </div><div class="voice-card">
+    <div class="voice-head"><img class="voice-photo" src="images/voice_uetsuru.webp" alt="上鶴恵子さん"><div><p class="voice-name">上鶴恵子さん</p><p class="voice-role">オーガニックショップSEN経営（山梨県富士川町）</p></div></div>
+    <div class="voice-quote"><p>お話を聞いてくれた経営者さんたちが「自分たちも力になりたい」と、たくさん入会してくれて、その後は畑の作業にも来てくださる。そんな活動の輪が広がりました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>勇気を持って一歩を踏み出して分かったことは、ちゃんと伝えれば、こんなに理解者が増えるんだということでした。</p></div></details></div>
   </div><div class="voice-card">
     <div class="voice-head"><img class="voice-photo" src="images/voice_mori.webp" alt="森 奈央さん"><div><p class="voice-name">森 奈央さん</p><p class="voice-role">森のオーガニックショップBitteオーナー（北海道七飯町）</p></div></div>
     <div class="voice-quote"><p>お店に来てくださる方は、やはりオーガニックに興味がある方なんです。じゃあ、興味がない方にどのように周知していくのか。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>「お店の協力をしたい」「私も何かできることで協力したい」——講座をやっていると話すだけで、そんな声をいただけるようになりました。</p><p>リピーターの方が、最近増えてくださっています。</p></div></details></div>
@@ -455,8 +450,8 @@ footer{padding-bottom:84px}
     <div class="voice-head"><img class="voice-photo" src="images/voice_yanagida.jpg" alt="柳田夕希さん"><div><p class="voice-name">柳田夕希さん</p><p class="voice-role">ピラティス講師／フルオーガニック酵素ドリンク「Natural FLORA」製造販売</p></div></div>
     <div class="voice-quote"><p>オーガニックは美容とか健康にいいということしか、私は知らなくて。そういうところじゃなくて、オーガニックが社会を変える仕組み、社会全体を幸せにする仕組みということを学んだのが、すごく自分の中で気づきがありました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>IOBを受講されている皆さんとのつながりで、お仕事にもつなげていただきました。クランデールさんですごく販売していただいて、人気をいただいていて、めちゃくちゃ嬉しいです。</p><p>入っていなかったら、本当にビジネスも成り立たないですし、オーガニックのことを話せる仲間もいなかったと思います。</p></div></details></div>
   </div><div class="voice-card">
-    <div class="voice-head"><img class="voice-photo" src="images/voice_kawada.jpg" alt="川田むつみさん"><div><p class="voice-name">川田むつみさん</p><p class="voice-role">オーガニックスーパー「クランデール」「ココシーズンズ」運営（千葉県松戸市）</p></div></div>
-    <div class="voice-quote"><p>お客様から「オーガニックって何ですか？」と尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>IOBで学んだ、エビデンスに基づくオーガニックの知識は、食の専門家として、オーガニック商品を扱う経営者としてブレない「軸」となり、自信を与えてくれました。</p><p>その学びを伝え続けた結果、私のインスタフォロワー数は4倍に成長。「オーガニックを正しく広めたい」と願う仲間たちとともに活動しながら、店舗も拡大し、ビジネスは順調に成長しています。（個人の感想です）</p></div></details></div>
+    <div class="voice-head"><img class="voice-photo" src="images/voice_saruta.jpg" alt="猿田一生さん"><div><p class="voice-name">猿田一生さん</p><p class="voice-role">美容室オーナー／THE ORIENTAL JOURNEY（千葉県柏市）代表<br>一般社団法人 日本サステナブルサロン協会 代表理事</p></div></div>
+    <div class="voice-quote"><p>従業員時代はこの想いが理解されず、日々孤独を感じていました。</p><details class="more"><summary>続きを読む</summary><div class="dm"><p>IOBでの学びは、私の信念を確固たるものにし、自信を持って発信する力を与えてくれました。</p><p>その結果、多くの方から支持を得ることができ、IOBのスクール生の方たちがたくさん来店してくれるようになったり、「ずっと、こんなサロンを探していた」と涙するお客様の姿を見たりしたときには、努力が報われたと感じました。</p></div></details></div>
   </div></div><p class="swipe-hint">横にスワイプできます →</p>
 <p class="note" style="margin:0 0 28px">ここに置いた言葉は、書籍とインタビュー動画で本人が語ったものです（一部、読みやすく整えています）。</p>
 
@@ -473,14 +468,13 @@ footer{padding-bottom:84px}
       <span class="cover-play" aria-hidden="true"><svg viewBox="0 0 20 20" fill="#fff"><path d="M5 3l12 7-12 7z"/></svg></span>
     </div>
   </div>
-  <p class="video-note">お渡しするのは、この授業動画1本です。</p>
   <div class="firstwin">
     <p class="fw-tag">AFTER</p>
     <p class="fw-h">この授業を見終えたあと、あなたが手にする3つのこと</p>
     <ul>
-      <li>この授業を見終えると、「オーガニックって、何ですか？」と聞かれたとき、世界で共有されている定義を拠りどころに、自分の言葉で答える軸が持てる</li>
+      <li>次に「オーガニックって、何ですか？」と聞かれたとき、話し出すための拠りどころ（世界で共有されている定義）が、手元に残る</li>
       <li>「健康や安全」「環境にいい」に加えて、社会・地球・未来世代にとってのオーガニックの価値まで知ることができる</li>
-      <li>自分がなぜオーガニックを扱っているのかを、見つめ直すきっかけになる</li>
+      <li>自分がなぜオーガニックを扱っているのかを、もう一度、自分の言葉で思い出す材料が手に入る</li>
     </ul>
   </div>
 </section>
@@ -514,7 +508,7 @@ footer{padding-bottom:84px}
       <li>Forbes Japan 公式コラムニスト</li>
       <li>ビオセボン年間従業員研修（300名以上）</li>
     </ul>
-    <details class="more" style="margin-top:20px"><summary>この仕事をしている理由</summary><div class="dm"><p>この仕事をしている理由は、20代の頃にあります。JICAの一員としてボリビアとメキシコで、途上国の生産者支援に携わりました。豊かな国の暮らしが誰かの犠牲の上に成り立っている、その不条理を変えたいと論文を読み漁るなかで、オーガニックという「仕組み」に出会いました。確かめるためにドイツへ渡り、いまもここで暮らしています。</p></div></details>
+    <details class="more" style="margin-top:20px"><summary>この仕事をしている理由</summary><div class="dm"><p>この仕事をしている理由は、20代の頃にあります。JICAの一員としてボリビアとメキシコで、途上国の生産者支援に携わりました。豊かな国の暮らしが誰かの犠牲の上に成り立っている、その不条理を変えたいと、論文を読み漁りました。その中で、オーガニックという「仕組み」に出会いました。確かめるためにドイツへ渡り、いまもここで暮らしています。</p></div></details>
     <p>私が増やしたいのは、オーガニックの価値を知り、自分の活動として、必要としている人へきちんと届けられる人です。一人ひとりの言葉が変われば、届き方も変わっていく。私は、そのための教育を続けています。</p>
   </div>
 </section>
@@ -551,7 +545,7 @@ footer{padding-bottom:84px}
       <div class="field"><label for="email3">メールアドレス</label><input type="email" id="email3" name="email" autocomplete="email" inputmode="email" required></div>
       <button class="btn" type="submit">無料の授業動画を受け取る</button>
       <div class="err"></div>
-    </form><p class="fineprint">登録後すぐに、授業動画のページをご案内するメールが届きます。配信はいつでも解除できます。</p></div>
+    </form><p class="fineprint">登録すると、授業動画のページと、IOBからのメールが届きます。配信はいつでも解除できます。</p></div>
 </section>
 </div>
 <div class="sticky" id="sticky"><a class="btn" href="#form">無料の授業動画を受け取る</a></div>
