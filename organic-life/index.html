@@ -19,7 +19,11 @@ img{max-width:100%;display:block}
 .wrap{max-width:600px;margin:0 auto;padding:0 22px}
 header{padding:20px 0 0}
 header img{width:104px}
-.fv{padding:34px 0 26px}
+.lp-hero{max-width:600px;margin:18px auto 0}
+.lp-hero img{width:100%;aspect-ratio:16/12;object-fit:cover;object-position:32% 18%;display:block}
+.figwide{margin:0 0 22px}
+.figwide img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px}
+.fv{padding:26px 0 26px}
 .fv h1{margin:0 0 20px;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:clamp(28px,8vw,40px);line-height:1.5;text-wrap:balance}
 .quotes{margin:0 0 18px;padding:0;list-style:none;font-family:"Zen Old Mincho",serif;font-weight:500;font-size:clamp(17px,4.8vw,20px);line-height:1.8;color:var(--ink-soft)}
 .fv p{margin:0 0 16px;font-size:15px}
@@ -52,6 +56,7 @@ section p{margin:0 0 16px;font-size:15px}
 .points li::before{content:"";position:absolute;left:4px;top:13px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
 .teacher{display:flex;gap:16px;align-items:center;margin:22px 0 0}
 .teacher img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.teacher{display:block}
 .teacher .nm{font-size:13.5px;line-height:1.8;color:var(--ink-soft)}
 .teacher .nm b{display:block;color:var(--ink);font-weight:700;font-size:15px}
 footer{padding:34px 0 44px;font-size:11.5px;color:var(--ink-faint);line-height:1.9;border-top:1px solid var(--border)}
@@ -60,26 +65,26 @@ footer a{color:var(--ink-faint);margin-right:14px}
 </head>
 <body>
 <header><div class="wrap"><img src="../images/logo_orange.png" alt="ドイツIOBオーガニックスクール"></div></header>
+<div class="lp-hero"><img src="../images/natsuko_short.jpg" alt="レムケなつこ"></div>
 
 <div class="wrap">
   <div class="fv">
     <h1>オーガニックって、<br>結局なんだろう？</h1>
-    <ul class="quotes"><li>スーパーに行くと、めちゃくちゃ悩む。</li><li>マークがあっても、100％は信じきれない。</li></ul>
-    <p>オーガニックは、何を目指して生まれたのか。<br>世界では、どう定義されているのか。</p>
-    <p>スーパーで迷うあなたに、その定義と歴史を、<br>最初からお話しする無料の授業です。</p>
+    <ul class="quotes"><li>スーパーでオーガニックを選ぼうとすると、めちゃくちゃ悩む。</li><li>オーガニックのマークがついていても、100％は信じきれない。</li></ul>
+    <p>その「結局なんだろう」を、<br>世界で共有されているオーガニックの定義と、<br>その歴史から、順番にたどる授業です。</p>
     <div class="lessonname">「オーガニックを、<br>暮らしの中で理解するための<br>最初の授業」</div>
     <p class="lessonmeta">全6パート・約32分<br>無料でご覧いただけます。</p>
   </div>
 
   <div class="formbox" id="form">
-    <p class="lead">お名前とメールアドレスを登録すると、<br>授業をご覧いただけるページをメールでご案内します。</p>
+    <p class="lead">お名前とメールアドレスを登録すると、<br>授業のページがメールで届きます。</p>
     <form class="optin" novalidate>
       <div class="field"><label>お名前</label><input type="text" name="name" autocomplete="name" placeholder="お名前"></div>
       <div class="field"><label>メールアドレス</label><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="メールアドレス"></div>
       <button class="btn" type="submit">無料授業を受け取る</button>
       <div class="err" role="alert"></div>
     </form>
-    <p class="fineprint">ご登録のメールアドレスに、授業のページをご案内します。<br>メール配信はいつでも解除できます。<br>お預かりした個人情報は、プライバシーポリシーに基づいて管理します。</p>
+    <p class="fineprint">入力は、お名前とメールアドレスの2つだけです。登録後すぐに、授業のページがメールで届きます。<br>メール配信はいつでも解除できます。<br>お預かりした個人情報は、プライバシーポリシーに基づいて管理します。</p>
   </div>
 
   <section>
@@ -97,22 +102,22 @@ footer a{color:var(--ink-faint);margin-right:14px}
       <li>オーガニックが、「健康」「環境」だけでは語りきれないのはなぜか</li>
     </ul>
     <p>を、順番にお話ししています。</p>
-    <p>マークや認証の名前を暗記する授業ではありません。<br>買い物でマークを見たとき、食や環境のニュースを見たとき、「これはどういうことだろう」とあなたが自分で考えるための材料が増えます。</p>
-    <p>私は、あなたに正しさを押しつけたくありません。授業も、そのあとのメールも、暮らしの全部をオーガニックに変えなくていい前提でお話しします。</p>
-    <p>6つのパートは、はじめに、定義、これまでの歴史、世界の定義（前編・後編）、オーガニックの真価の順に進みます。順番どおりでも、気になるパートからでも、ご覧いただけます。</p>
-    <p>見終わったあとは、スーパーでマークを見たとき、「これは世界のオーガニックの考え方のどこにあたるんだろう」と、自分で確かめる手がかりが手元に残ります。</p>
+    <p>マークや認証の名前を暗記する授業ではありません。</p>
+    <p>私は、あなたに正しさを押しつけたくありません。この授業は、暮らしの全部をオーガニックに変えなくていい前提でお話ししています。</p>
+    <p>全6パートは、はじめに、定義、これまでの歴史、世界の定義（前編・後編）、オーガニックの真価の順です。<br>はじめての方は、1つ目から順にご覧ください。見返すときは、気になるパートだけでも見られます。</p>
+    <p>見終わったあとは、マークを見たとき、「世界の定義に照らすと、これはどういうことだろう」と考えるための、ものさしが一つ手元に残ります。</p>
   </section>
 
   <section>
     <h2>私は、「なぜ、それを選ぶのか」まで、あなたと考えたい</h2>
+    <div class="figwide"><img src="../images/cows.jpg" alt="アルゴイ地方の牧草地の牛" loading="lazy"></div>
     <p>私は、<br>「オーガニックとは、すべての命が幸せになる仕組み」<br>と考えています。</p>
     <p>だから、<br>何を買えばいいかだけではなく、<br>「なぜ、それを選ぶのか」まで、あなたに知ってほしいと思っています。</p>
     <p>一人ひとりが、食べものも暮らしの品も、自分で考えて選べるようになる。<br>その先に、「オーガニックが、あたりまえ。」な社会があると、私は信じています。</p>
     <p>ドイツ在住17年。<br>ドイツの大学院でオーガニックを研究し、<br>2018年から日本の方向けにオーガニックのスクールを運営してきました。</p>
     <p>これまでに、延べ1,900人以上の方が学んでいます。</p>
     <div class="teacher">
-      <img src="../images/natsuko_square.jpg" alt="レムケなつこ">
-      <div class="nm"><b>レムケなつこ</b>オーガニック教育の専門家<br>オーガニックビジネス研究所（IOB）代表</div>
+            <div class="nm"><b>レムケなつこ</b>オーガニック教育の専門家<br>オーガニックビジネス研究所（IOB）代表</div>
     </div>
   </section>
 
@@ -126,7 +131,7 @@ footer a{color:var(--ink-faint);margin-right:14px}
         <button class="btn" type="submit">無料授業を受け取る</button>
         <div class="err" role="alert"></div>
       </form>
-      <p class="fineprint">ご登録のメールアドレスに、授業のページをご案内します。<br>メール配信はいつでも解除できます。<br>お預かりした個人情報は、プライバシーポリシーに基づいて管理します。</p>
+      <p class="fineprint">入力は、お名前とメールアドレスの2つだけです。登録後すぐに、授業のページがメールで届きます。<br>メール配信はいつでも解除できます。<br>お預かりした個人情報は、プライバシーポリシーに基づいて管理します。</p>
     </div>
   </section>
 </div>
