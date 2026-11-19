@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="robots" content="noindex">
-<title>お客さまの「高いですね」で話が終わるなら｜無料の授業｜ドイツIOBオーガニックスクール</title>
-<meta name="description" content="オーガニックを仕事で届けている方へ。お客さまが凄さを知ったとき、本気で買いたくなり、あなたを応援したくなる。まずあなた自身が学ぶ、32分の無料授業です。">
-<meta property="og:title" content="お客さまの「高いですね」で話が終わるなら｜無料の授業｜ドイツIOBオーガニックスクール">
-<meta property="og:description" content="オーガニックを仕事で届けている方へ。お客さまが凄さを知ったとき、本気で買いたくなり、あなたを応援したくなる。まずあなた自身が学ぶ、32分の無料授業です。">
+<title>なぜ、お客さまに教えると、あなたを応援したくなる人が増えるのか｜無料の授業｜ドイツIOBオーガニックスクール</title>
+<meta name="description" content="オーガニックを仕事で届けている方へ。お客さまに応援されながら続く事業をつくりたいなら、まず、あなたが知ることから。最初の授業を、無料でお渡しします。">
+<meta property="og:title" content="なぜ、お客さまに教えると、あなたを応援したくなる人が増えるのか｜無料の授業｜ドイツIOBオーガニックスクール">
+<meta property="og:description" content="オーガニックを仕事で届けている方へ。お客さまに応援されながら続く事業をつくりたいなら、まず、あなたが知ることから。最初の授業を、無料でお渡しします。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://iobschool.github.io/organiclove/images/hero_allgaeu.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -391,21 +391,35 @@ budoux-ja{display:inline;line-break:strict}
 /* 最後の帯：文字とフォームの左端を、ほかの節と同じ位置にそろえる（+22pxを足さない） */
 section.band-photo{padding-left:calc(50vw - 50%);padding-right:calc(50vw - 50%)}
 .profile .role{font-size:clamp(11px,3.2vw,12.5px);color:var(--ink-soft)}
+
+/* ===== 最初の画面：授業中のなつこさんの写真に、文字を重ねる（2026-11-19 本人指定） ===== */
+.hero-teach{min-height:min(640px,calc(100svh - 24px));display:flex;flex-direction:column;justify-content:flex-end;background:#3b261a}
+.hero-teach .hero-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;max-width:none;aspect-ratio:auto;margin:0;object-fit:cover;object-position:80% 18%}
+.hero-teach::after{display:block;content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(35,22,14,.0) 0%,rgba(35,22,14,.0) 24%,rgba(35,22,14,.72) 52%,rgba(35,22,14,.94) 100%);pointer-events:none}
+.hero-teach .hero-copy{position:relative;z-index:2;padding:0 20px 30px;margin-top:230px}
+.hero-teach .hero-eyebrow{padding:0;margin:0 0 10px;font-size:clamp(12.5px,3.4vw,14px);line-height:1.7;text-decoration:none;color:#F0DFA0;letter-spacing:.04em;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.hero-teach .hero-catch{margin:0;font-size:clamp(23px,6.6vw,40px);line-height:1.5;letter-spacing:.02em;white-space:normal;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.hero-teach .hero-sub{margin:14px 0 18px;font-size:clamp(13.5px,3.7vw,15.5px);line-height:1.9;color:#fff;font-weight:500;line-break:strict;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.hero-teach .hero-btn{display:block;width:100%;max-width:420px;box-sizing:border-box;text-align:center;text-decoration:none}
+@media (min-width:700px){
+  .hero-teach{min-height:600px}
+  .hero-teach .hero-photo{object-position:70% 22%}
+  .hero-teach .hero-copy{margin-top:260px;margin-left:max(0px,calc(50% - 318px));margin-right:auto;max-width:636px;box-sizing:border-box}
+}
 </style>
 </head>
 <body>
-<header class="hero">
-  <img class="hero-photo" src="../images/natsuko_short.jpg" alt="レムケなつこ">
+<header class="hero hero-teach">
+  <img class="hero-photo" src="../images/talk_up.jpg" alt="スクールの授業で、受講生に向けて話すレムケなつこ">
   <img class="hero-logo" src="../images/logo_orange.png" alt="Institut für Organic Business">
-  <p class="hero-eyebrow">お店で、教室で、ものづくりの現場で。<br>オーガニックを届けているあなたへ</p>
   <div class="hero-copy">
-    <p class="hero-q">もし、お客さまの<br><b class="kd">「高いですね」</b>の一言で、</p>
-    <h1 class="hero-catch">話が<span class="y">終わっている</span>なら。</h1>
+    <p class="hero-eyebrow">オーガニックを仕事で届けているあなたへ</p>
+    <h1 class="hero-catch">なぜ、お客さまに教えると、あなたを応援したくなる人が増えるのか。</h1>
+    <p class="hero-sub">もしあなたが、お客さまに応援されながら続く事業をつくりたいなら、まず、あなたが知ることから。その最初の授業を、無料でお渡しします。</p>
+    <a class="btn hero-btn" data-cta="hero" href="#form">無料の授業動画を受け取る</a>
   </div>
 </header>
 <div class="wrap">
-  <p class="hero-sub-h hero-voice">そんなとき、知識より、<br>発信や売り方を磨きたくなる。<br>私も「知識は、もういらない」と<br>思い込んでいました。</p>
-  <p class="hero-voice2">いまは、お客さまの前に立つ人にこそ、<br><span class="ym">知識が要る</span>と考えています。</p>
 
   <ul class="promise">
     <li><b>お客さまの質問に、自分の言葉で答える</b>オーガニックを仕事で届けている方のための、無料の授業です。「オーガニックって、何がいいの？」と聞かれたとき、自分の言葉で話すための知識が手に入ります。次に「高いですね」と言われたとき、話したいことが一つ増えている。そのための授業です。</li>
@@ -428,6 +442,8 @@ section.band-photo{padding-left:calc(50vw - 50%);padding-right:calc(50vw - 50%)}
   <p>原料を探した時間も、作り手と話してきたことも、伝える前に会話が終わってしまう。</p>
   <p>値札を見る前に、そのものの背景を知る機会が、まだなかったのかもしれません。「高いですね」の一言の裏には、そんな場面が重なっていることがあります。</p>
   <p><b>自分がなぜオーガニックを選び、届けているのか。その理由を、<span class="ym">お客さまにちゃんと話したかった。</span></b></p>
+  <p style="font-weight:700">そんなとき、知識より、発信や売り方を磨きたくなる。私も「知識は、もういらない」と思い込んでいました。</p>
+  <p class="hero-voice2">いまは、お客さまの前に立つ人にこそ、<span class="ym">知識が要る</span>と考えています。</p>
 </section>
 
 <section>
