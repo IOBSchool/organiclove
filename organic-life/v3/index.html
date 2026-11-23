@@ -131,7 +131,10 @@ ol.parts li{display:flex;gap:12px;align-items:center;padding:14px 16px;border-bo
 ol.parts li:last-child{border-bottom:0}
 ol.parts .n{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;font-family:"Noto Serif JP",serif;font-weight:900;font-size:15px;line-height:30px;text-align:center}
 ol.parts .t{flex:1;min-width:0;font-weight:500}
-ol.parts .d{flex:none;font-family:"Noto Serif JP",serif;font-weight:900;font-size:17px;color:var(--odark);letter-spacing:.02em;font-variant-numeric:tabular-nums}
+ol.parts .x{display:block;margin-top:3px;font-size:13.5px;font-weight:400;line-height:1.75;color:var(--mid)}
+ol.parts li{align-items:flex-start}
+ol.parts .n{margin-top:2px}
+ol.parts .d{margin-top:1px;flex:none;font-family:"Noto Serif JP",serif;font-weight:900;font-size:17px;color:var(--odark);letter-spacing:.02em;font-variant-numeric:tabular-nums}
 
 /* ---------- プロフィール（円形の顔写真） ---------- */
 .who{display:flex;flex-direction:column;align-items:center;text-align:center;margin:0 0 28px}
@@ -236,7 +239,7 @@ ul.chips.big{margin:0 0 26px}
 ul.chips.big p{font-size:15.5px !important}
 .whohead{display:flex;align-items:center;gap:12px;margin:0 0 26px}
 .whohead .av{position:relative;flex:none;display:block;width:92px;height:92px;border-radius:50%;overflow:hidden;background:var(--cream);box-shadow:0 0 0 4px #fff,0 0 0 7px var(--orange),var(--shadow);margin:7px}
-.whohead .av img{position:absolute;max-width:none;width:585px;height:auto;left:-360px;top:-58px}
+.whohead .av img{position:absolute;max-width:none;width:150px;height:auto;left:-17px;top:-4px}
 .whohead h2{margin:0;font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(19px,5.6vw,23px);line-height:1.55;letter-spacing:.01em;color:var(--ink);text-align:left}
 .bleed.mid{margin-top:34px;margin-bottom:40px}
 .tot2{margin:0 0 6px !important;text-align:center;font-family:"Noto Serif JP",serif;font-weight:900;font-size:19px !important;line-height:1.7 !important;color:var(--ink) !important}
@@ -308,44 +311,41 @@ ul.chips.big p{font-size:15.5px !important}
 <section>
   <div class="in">
     <figure class="bleed zoom"><img src="../../images/talk_up.jpg" alt="講座で話すレムケなつこ" loading="lazy" style="object-position:60% 30%;transform-origin:72% 38%"></figure>
-    <h2 class="sec"><span class="nw">「オーガニックって何？」</span>を、<br>3つの問いからたどります。</h2>
+    <h2 class="sec"><span class="nw">「オーガニックって何？」</span><br>6つの動画で、<br>こんなお話をします。</h2>
     <p>オーガニックとは、無農薬、無添加といった「食のカテゴリー」ではありません。オーガニックは「仕組み」。その仕組みの中で、自然環境、動植物、私たち、そしてまだみぬ命までも幸せに豊かになっていく。</p>
     <p style="margin-bottom:24px"><b>この無料授業では、世界で共有されているオーガニックの考え方をもとに、オーガニックが何を大切にしているのかを分かりやすくお話しします。スーパーでマークや表示を見て迷ったときにも、知っておくと役立つかもしれないお話です。</b></p>
+    <p style="margin-bottom:16px">この授業では、3つの疑問についてお話しします。</p>
     <ol class="why">
       <li>
         <p class="h"><span class="q">そもそも、<br>オーガニックとは何なのか？</span></p>
-        <p>パート1では<span class="nw">「有機農業の原理（はじめに）」</span>についてお話しし、パート2でIOBの一言の定義を紹介します。</p>
-        <p class="tight">売り場で見かける<span class="nw">「オーガニック」という言葉の</span>背景を、この2つのパートからたどります。</p>
+        <p>講師が最初に授業全体の流れをご案内し、次のパートでは、IOBが伝えるオーガニックの一言の定義をご紹介します。</p>
       </li>
       <li>
-        <p class="h"><span class="q">なぜ、オーガニックは<br>そんな考え方をするのか？</span></p>
-        <p>その間のパートでは、オーガニックのミニ歴史や世界のオーガニック定義をたどります。</p>
-        <p class="tight">世界で共有されている<span class="nw">「健康」</span><span class="nw">「生態系」</span><span class="nw">「公正」</span><span class="nw">「配慮」</span>の<span class="hl nw">4つの原理</span>を取り上げ、オーガニックコスメと動物実験、遺伝子組み換えを使わない理由などにも触れます。</p>
-        <p class="tight">身近な商品に関わる話を通して、考え方の背景を見ていきます。</p>
+        <p class="h"><span class="q">オーガニックは、<br>なぜ世界で広まってきたのか？</span></p>
+        <p>講師が、ヨーロッパで始まったオーガニックの歴史と、世界で共有されている<span class="nw">「健康」</span><span class="nw">「生態系」</span><span class="nw">「公正」</span><span class="nw">「配慮」</span>の<span class="hl nw">4つの原理</span>を、身近な例とともにお話しします。</p>
       </li>
       <li>
-        <p class="h"><span class="q">オーガニックは、<br>自分や社会と<br>どうつながっているのか？</span></p>
-        <p>最後のパート6では、<span class="nw">「自分にとっての意味」</span>と<span class="nw">「社会にとっての意味」</span>という2つの側面をまとめます。</p>
-        <p class="tight">最後のパートでは、売り場で見かける商品と、動物や植物、社会とのつながりについてもお話しします。</p>
+        <p class="h"><span class="q">オーガニックは、<br>私たちや社会と<br>どうつながっているのか？</span></p>
+        <p>講師が、オーガニックの<span class="nw">「自分のためにいい」</span>という側面に加えて、社会や地球、未来の世代にとっての意味もご紹介します。</p>
       </li>
     </ol>
     <p class="tot2">全6パート・<span class="n">約32分</span>の無料動画授業</p>
     <ol class="parts">
-      <li><span class="n">1</span><span class="t"><span class="nw">有機農業の原理</span><span class="nw">（はじめに）</span></span><span class="d">2:41</span></li>
-      <li><span class="n">2</span><span class="t"><span class="nw">IOBのオーガニック定義</span></span><span class="d">5:41</span></li>
-      <li><span class="n">3</span><span class="t"><span class="nw">オーガニックのミニ歴史</span></span><span class="d">3:45</span></li>
-      <li><span class="n">4</span><span class="t"><span class="nw">世界のオーガニック定義</span><span class="nw">（前編）</span></span><span class="d">8:42</span></li>
-      <li><span class="n">5</span><span class="t"><span class="nw">世界のオーガニック定義</span><span class="nw">（後編）</span></span><span class="d">7:42</span></li>
-      <li><span class="n">6</span><span class="t"><span class="nw">オーガニックの真価</span></span><span class="d">3:53</span></li>
+      <li><span class="n">1</span><span class="t"><span class="nw">有機農業の原理</span><span class="nw">（はじめに）</span><span class="x">講師が最初にごあいさつし、この授業でこれからどんなお話をするのかをご案内します。</span></span><span class="d">2:41</span></li>
+      <li><span class="n">2</span><span class="t"><span class="nw">IOBのオーガニック定義</span><span class="x">講師が、日本でのオーガニックの説明にも触れながら、IOBが伝える一言の定義をご紹介します。さらに、「自分のため」と「社会のため」という2つの側面をお話しします。</span></span><span class="d">5:41</span></li>
+      <li><span class="n">3</span><span class="t"><span class="nw">オーガニックのミニ歴史</span><span class="x">講師が、オーガニックが1920年代のヨーロッパで社会運動として始まり、世界で共有される考え方へと発展してきた歴史をご紹介します。</span></span><span class="d">3:45</span></li>
+      <li><span class="n">4</span><span class="t"><span class="nw">世界のオーガニック定義</span><span class="nw">（前編）</span><span class="x">講師が、人の健康と自然環境とのつながりをお話しします。土の中の小さな生き物とニンジンの関係なども、図を使ってご紹介します。</span></span><span class="d">8:42</span></li>
+      <li><span class="n">5</span><span class="t"><span class="nw">世界のオーガニック定義</span><span class="nw">（後編）</span><span class="x">講師が、オーガニックコスメの認証と動物実験の関係や、遺伝子組み換え技術を使わない理由をご紹介します。さらに、生産から買い物までのつながりもお話しします。</span></span><span class="d">7:42</span></li>
+      <li><span class="n">6</span><span class="t"><span class="nw">オーガニックの真価</span><span class="x">講師が、オーガニックの価値は自分のためだけではなく、社会や地球、未来の世代にも関わっていることを、生物多様性の保全などの例とともにお話しします。</span></span><span class="d">3:53</span></li>
     </ol>
-    <p class="c" style="margin-top:20px">順番に見ても、気になるパートから見てもかまいません。まとめて時間を取る必要はありません。</p>
+    <p class="c" style="margin-top:20px">6つの動画は、1つ目から順番に見ても、気になるパートだけ見てもかまいません。ご自身の都合に合わせてご覧ください。</p>
   </div>
 </section>
 
 <!-- はじめまして：講師紹介 -->
 <section class="alt">
   <div class="in">
-    <div class="whohead"><span class="av"><img src="../../images/hero_allgaeu.jpg" alt="ドイツ・アルゴイの草原で笑うレムケなつこ" width="1400" height="1050"></span><h2>はじめまして、<br><span class="nw">レムケなつこです。</span></h2></div>
+    <div class="whohead"><span class="av"><img src="../../images/natsuko.jpg" alt="笑顔のレムケなつこ" width="760" height="950"></span><h2>はじめまして、<br><span class="nw">レムケなつこです。</span></h2></div>
     <p>私はドイツに住んで<span class="nw"><span class="num">約17年</span>になります。</span></p>
     <p>いまは南ドイツ・バイエルン州で暮らしながら、オーガニック教育に携わっています。</p>
     <p>JICA青年海外協力隊として活動したボリビアで、私は出稼ぎ労働者が搾取される現実を目の当たりにしました。</p>
