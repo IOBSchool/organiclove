@@ -319,13 +319,57 @@ footer .sns a{font-weight:500}
 @media (min-width:860px){
   .fv-photo{right:-20px}
 }
+
+/* ===== pro-v2（確認用）：FV写真と写真ブロック。既存の文章・計測は変えていない ===== */
+.fv-photo{display:none}
+.fv-pic{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:640px;height:auto;pointer-events:none;
+  filter:sepia(.2) saturate(.95) brightness(1.12) contrast(1.04);
+  -webkit-mask-image:linear-gradient(180deg,#000 50%,transparent 99%),linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(180deg,#000 50%,transparent 99%),linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%);
+  mask-composite:intersect}
+.fv:has(.fv-pic.nara) .fv-logo{filter:brightness(0) invert(1) drop-shadow(0 1px 5px rgba(0,0,0,.75));opacity:1}
+.fv-pic.nara{mix-blend-mode:luminosity;filter:sepia(.55) brightness(.98) contrast(1.15);opacity:.97;
+  -webkit-mask-image:linear-gradient(180deg,#000 48%,transparent 98%),linear-gradient(90deg,transparent 0,#000 8%,#000 80%,transparent 100%);
+  mask-image:linear-gradient(180deg,#000 48%,transparent 98%),linear-gradient(90deg,transparent 0,#000 8%,#000 80%,transparent 100%)}
+@media (min-width:700px){
+  .fv-pic{max-width:560px;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 98%),linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,#000 45%,transparent 98%),linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%)}
+  .fv-in{padding-top:330px}
+}
+@media (min-width:1000px){
+  .fv-pic{left:auto;right:max(0px,calc(50% - 600px));transform:none;width:560px;max-width:none}
+  .fv-in{padding-top:150px}
+}
+.pv{margin:0;padding:0;background:#fff}
+.pv figure{margin:0}
+.pv img{display:block;width:100%;height:auto}
+.pv-cap{max-width:960px;margin:0 auto !important;padding:10px 20px 14px;font-size:12.5px;line-height:1.7;color:var(--mid);text-align:left}
+.pv-c{max-width:960px;margin:0 auto}
+.pv-c img{aspect-ratio:3/2;object-fit:cover}
+.pv-a-wrap{padding:20px 0 22px}
+.pv-dark{background:#241a14}
+.pv-cream{background:var(--cream)}
+.pv-white{background:#fff}
+.pv-label{margin:0 auto 12px !important;max-width:960px;padding:0 20px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#ffc9a3}
+.pv-a{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.pv-a::-webkit-scrollbar{display:none}
+.pv-a figure{flex:0 0 76%;max-width:360px;scroll-snap-align:center}
+.pv-a img{aspect-ratio:3/2;object-fit:cover;border-radius:6px}
+.pv-a:focus-visible{outline:3px solid var(--orange);outline-offset:-3px}
+.pv-dark .pv-cap{color:rgba(255,255,255,.8);padding-top:12px}
+.pv-b{display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:960px;margin:0 auto}
+.pv-b img{aspect-ratio:4/3;object-fit:cover}
+.pv-b3 figure:first-child{grid-column:1/-1}
+.pv-b3 figure:first-child img{aspect-ratio:16/9}
+.pv-b3 figure:not(:first-child) img{aspect-ratio:4/3}
 </style>
 </head>
 <body>
 
 <!-- ============ FVと本文の見せ方を、ドリルLP・ZOOMセミナーLPの型に作り替え（2026-11-23）。文章は変えていない ============ -->
 <header class="fv">
-  <img class="fv-photo" src="images/natsuko_short.jpg" alt="レムケなつこ" width="1800" height="1200">
+  <img class="fv-pic" id="fvp" src="images/pv/fv_oka.webp" alt="お客さまの話を聞いて、笑顔で答えるレムケなつこ" width="935" height="840" fetchpriority="high">
+  <script>if(/[?&]fv=nara(&|$)/.test(location.search)){var p=document.getElementById('fvp');p.src='images/pv/fv_nara.webp';p.width=900;p.height=900;p.className+=' nara';p.alt='セミナー会場の壇上で、マイクを持って話すレムケなつこ';}</script>
   <img class="fv-logo" src="images/logo_orange.png" alt="Institut für Organic Business">
   <div class="fv-in">
     <p class="fv-eyebrow">オーガニックを扱う、<br>お店・畑・サロン・講師・専門職の方へ</p>
@@ -334,6 +378,9 @@ footer .sns a{font-weight:500}
     <a class="cta" href="#form" data-cta="fv">無料の授業動画を受け取る</a>
   </div>
 </header>
+<!-- 写真ブロック（FV直下） -->
+<div class="pv pv-c"><img src="images/pv/nara_2855.webp" alt="奈良サミットの会場。客席いっぱいの来場者が、笑顔でハートのポーズをしている" width="1400" height="933" loading="lazy" decoding="async"><p class="pv-cap">2024年10月 奈良サミットの会場</p></div><div class="pv pv-a-wrap pv-dark"><p class="pv-label">講演・講座の様子</p><div class="pv-a" tabindex="0" role="group" aria-label="写真（横にスクロールできます）"><figure><img src="images/pv/nara_2660.webp" alt="奈良サミットの舞台でしゃがんで、客席に向かって話すレムケなつこ" width="900" height="600" loading="lazy" decoding="async"></figure><figure><img src="images/pv/oka_279.webp" alt="スクリーンの前に立って講演するレムケなつこ（FFC岡崎主催の講演会）" width="1000" height="750" loading="lazy" decoding="async"></figure><figure><img src="images/pv/edu_barn_teach.webp" alt="ドイツのビオホテルの木の広間で、スライドの前に立って、床に座る受講生に話すレムケなつこ" width="1100" height="786" loading="lazy" decoding="async"></figure><figure><img src="images/pv/edu_stage_up.webp" alt="マイクを持って、笑顔で話すレムケなつこ" width="900" height="675" loading="lazy" decoding="async"></figure><figure><img src="images/pv/oka_193.webp" alt="「なぜ今、オーガニックなのか」の講演会で、壇上に立つレムケなつこ" width="1000" height="750" loading="lazy" decoding="async"></figure></div><p class="pv-cap">2024年10月 奈良サミット／2026年5月 FFC岡崎主催の講演会／ドイツ・ビオホテルでの講座</p></div>
+
 
 <!-- 1 共感：<span class="nw">「何ですか？」</span>に詰まった場面 -->
 <section>
@@ -378,6 +425,9 @@ footer .sns a{font-weight:500}
 </section>
 
 <!-- 4 BEFORE -->
+<!-- 写真ブロック -->
+<div class="pv pv-b"><figure><img src="images/pv/p_hakodate2025_group.webp" alt="会場いっぱいに並んで笑顔で写る、オーガニックを学ぶ人たちの集合写真" width="900" height="600" loading="lazy" decoding="async"></figure><figure><img src="images/pv/band_hokkaido2026.webp" alt="北海道の広い草地に集まった、大勢の参加者の集合写真" width="900" height="600" loading="lazy" decoding="async"></figure></div>
+
 <section class="alt">
   <div class="in">
     <div class="head">
@@ -389,6 +439,9 @@ footer .sns a{font-weight:500}
 </section>
 
 <!-- 5 AWARENESS 1つ目：私自身がそうでした -->
+<!-- 写真ブロック -->
+<div class="pv pv-b pv-b3"><figure><img src="images/pv/edu_barnclass.webp" alt="木の広間で、スライドを映して講義し、受講生が床に座って聞いている講座" width="1000" height="667" loading="lazy" decoding="async"></figure><figure><img src="images/pv/edu_herb.webp" alt="ハーブティーの香りを確かめる受講生" width="1000" height="667" loading="lazy" decoding="async"></figure><figure><img src="images/pv/edu_makeup.webp" alt="テーブルに道具を並べて、オーガニックのコスメ作りを学ぶ講座" width="1000" height="637" loading="lazy" decoding="async"></figure></div><p class="pv-cap">ドイツ・ビオホテルでの講座</p>
+
 <section>
   <div class="in">
     <div class="head">
@@ -430,6 +483,9 @@ footer .sns a{font-weight:500}
 </section>
 
 <!-- 6 WORDS：くらべる -->
+<!-- 写真ブロック -->
+<div class="pv pv-b"><figure><img src="images/pv/edu_am_day2.webp" alt="講座で、並んで話に耳を傾ける受講生たち" width="900" height="600" loading="lazy" decoding="async"></figure><figure><img src="images/pv/edu_am_voice.webp" alt="窓の光が入る教室で、笑顔で話を聞く受講生たち" width="900" height="600" loading="lazy" decoding="async"></figure></div>
+
 <section>
   <div class="in">
     <div class="head">
@@ -448,6 +504,9 @@ footer .sns a{font-weight:500}
 </section>
 
 <!-- 7 WHY -->
+<!-- 写真ブロック -->
+<div class="pv pv-c"><img src="images/pv/edu_workshop.webp" alt="講師を囲んで、受講生がワークショップに参加している様子" width="1000" height="667" loading="lazy" decoding="async"></div>
+
 <section class="alt">
   <div class="in">
     <div class="head">
@@ -461,7 +520,6 @@ footer .sns a{font-weight:500}
     <p>健康や安全という見方に、社会や未来世代という見方が加わると、お客さまに話せる言葉が増えていきます。</p>
     <p>知る範囲が広がると、「私はこの商品を通して、どんな社会をつくりたいのか」を、自分の言葉で考えられるようになります。</p>
     <ul class="steps"><li><b>学ぶ</b>知っている<br>ことが増える</li><li><b>言葉</b>使える言葉が<br>増える</li><li><b>届く</b>相手に合わせて<br>言葉を選べる</li></ul>
-    <figure class="photo" style="margin-top:28px"><img src="images/hakodate2025_group.jpg" alt="2025年10月 函館オーガニックイベントの集合写真" loading="lazy"><figcaption>2025年10月、函館で開かれたオーガニックイベント。IOBで学んだ人が主催しました。</figcaption></figure>
   </div>
 </section>
 
@@ -530,6 +588,9 @@ footer .sns a{font-weight:500}
 </section>
 
 <!-- 11 FREE LESSON -->
+<!-- 写真ブロック -->
+<div class="pv pv-c"><img src="images/pv/p_tour2026_group.webp" alt="ホテルの廊下で、笑顔で並ぶ2026年ツアーの参加者" width="900" height="675" loading="lazy" decoding="async"></div>
+
 <section class="alt">
   <div class="in">
     <div class="head">
@@ -558,7 +619,6 @@ footer .sns a{font-weight:500}
         <li>自分がなぜオーガニックを扱っているのかを、もう一度、<span class="hl">自分の言葉で思い出す材料</span>が<span class="nw">手に入る</span></li>
       </ol>
     </div>
-    <figure class="photo" style="margin-top:28px"><img src="images/hokkaido2026_group.jpg" alt="2026年 北海道ツアーの集合写真" loading="lazy"><figcaption>2026年の北海道ツアー。畑の前で、参加したみなさんと。</figcaption></figure>
   </div>
 </section>
 
@@ -593,7 +653,6 @@ footer .sns a{font-weight:500}
       <li>Forbes Japan 公式コラムニスト</li>
       <li>ビオセボン年間従業員研修（300名以上）</li>
     </ul>
-    <figure class="prof-photo"><img src="images/hero_allgaeu.jpg" alt="ドイツ・アルゴイの草原に座るレムケなつこ" loading="lazy"></figure>
     <div class="prof-more"><details class="more"><summary>この仕事をしている理由</summary><div class="dm"><p>この仕事をしている理由は、20代の頃にあります。JICAの一員としてボリビアとメキシコで、途上国の生産者支援に携わりました。豊かな国の暮らしが誰かの犠牲の上に成り立っている、その不条理を変えたいと、論文を読み漁りました。その中で、オーガニックという<span class="nw">「仕組み」</span>に出会いました。確かめるためにドイツへ渡り、いまもここで暮らしています。</p></div></details></div>
     <p class="punch">あなたの事業の背後には、たくさんのお客さまがいます。あなたがオーガニックの価値をお客さまに伝えることは、お客さまとともに<span class="nw">「オーガニックが、あたりまえ。」</span>という社会をつくっていく一歩です。IOBは、事業者のみなさんがその価値をお客さまに伝えるための教育を続けています。</p>
   </div>
