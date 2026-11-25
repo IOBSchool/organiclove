@@ -380,6 +380,14 @@ footer .sns a{font-weight:500}
 .empathy-list{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
 .empathy-list li{background:#fff;border:1px solid var(--tan);border-radius:14px;padding:14px 16px;font-family:"Noto Serif JP",serif;font-weight:700;font-size:16px;line-height:1.85;color:var(--ink);box-shadow:0 2px 10px rgba(61,42,30,.05)}
 .after-q{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(18px,5vw,21px) !important;line-height:1.75 !important;text-align:center;color:var(--ink) !important;margin:26px 0 22px !important;text-wrap:balance}
+/* 枠を減らす：共感〜川田さん〜「せいではない」は、川田さんの声のカードだけ枠を残す。WHYは枠なしの文字＋最後の濃い帯だけ枠 */
+.empathy-list{gap:16px;margin:0 0 6px}
+.empathy-list li{background:none;border:0;border-radius:0;box-shadow:none;padding:0 0 0 1.25em;position:relative}
+.empathy-list li::before{content:"";position:absolute;left:.15em;top:.95em;width:.5em;height:.5em;border-radius:50%;background:var(--orange)}
+.stat{background:none;border:0;border-radius:0;padding:0;margin:34px 0 34px}
+.core-lead{background:none;border:0;border-radius:0;padding:0;margin:0 0 30px}
+.reasons.core{gap:36px}
+.reasons.core li{background:none;box-shadow:none;border-radius:0;padding:0;overflow:visible}
 .recap h2.v3h{font-size:clamp(21px,6vw,27px)}
 
 </style>
@@ -394,7 +402,7 @@ footer .sns a{font-weight:500}
   <div class="fv-in">
     <p class="fv-eyebrow">オーガニックを仕事にしている方へ</p>
     <h1 class="fv-catch v3">なぜ、<span class="k nw">お客さまを教育する起業家</span><span class="nw">には、</span><br>お客さまも、仲間も、<br><span class="nw">チャンスも</span>集まってくるのか？</h1>
-    <p class="fv-sub"><span>お客さまが商品の価値を知ることは、あなたの事業を応援したくなるきっかけにもなります。</span><span>その第一歩は、あなた自身がオーガニックを深く学ぶことです。</span><span>専門家コースの最初の32分の授業を無料で公開します。</span></p>
+    <p class="fv-sub"><span>お客さまが商品の価値を知ることは、あなたの事業を応援したくなるきっかけにもなります。</span><span>その第一歩は、あなた自身がオーガニックを深く学ぶこと。</span><span>専門家コースの最初の32分の授業を無料で公開します。</span></p>
     <a class="cta" href="#form" data-cta="fv">無料の授業動画を受け取る</a>
   </div>
 </header>
@@ -413,7 +421,7 @@ footer .sns a{font-weight:500}
     </ul>
     <p class="after-q">オーガニックを仕事にしているからこそ、<br>その価値を伝える難しさを感じることもあります。</p>
     <div class="quote-card">
-      <p class="lead">オーガニックスーパーを運営する川田むつみさんも、かつてこんな経験をされていました。</p>
+      <p class="lead">川田むつみさんが運営するオーガニックスーパーは、毎週末、県外からもお客さまが訪れる人気店です。そんな川田さんも、かつては同じ悩みを抱えていました。</p>
       <div class="qrow"><img src="../images/voice_kawada.jpg" alt="川田むつみさん"><blockquote>「お客様から『オーガニックって何ですか？<span class="nw">』と</span>尋ねられるたびに、自信を持って答えることができず、自分の無知さに直面しました。」</blockquote></div>
       <p class="qname">オーガニックスーパー運営　川田むつみさん</p>
     </div>
@@ -422,7 +430,7 @@ footer .sns a{font-weight:500}
   </div>
 </section>
 
-<div class="pv pv-b pv-b3"><figure><img src="../pro-v2/img/edu_barnclass.webp" alt="木の広間で、スライドを映して講義し、受講生が床に座って聞いている講座" width="1000" height="667" loading="lazy" decoding="async"></figure><figure><img src="../pro-v2/img/edu_herb.webp" alt="ハーブティーの香りを確かめる受講生" width="1000" height="667" loading="lazy" decoding="async"></figure><figure><img src="../pro-v2/img/edu_makeup.webp" alt="テーブルに道具を並べて、オーガニックのコスメ作りを学ぶ講座" width="1000" height="637" loading="lazy" decoding="async"></figure></div><p class="pv-cap">ドイツ・ビオホテルでの講座</p>
+<div class="pv pv-b"><figure><img src="../pro-v2/img/edu_barnclass.webp" alt="木の広間で、スライドを映して講義し、受講生が床に座って聞いている講座" width="1000" height="667" loading="lazy" decoding="async"></figure><figure><img src="../pro-v2/img/edu_makeup.webp" alt="テーブルに道具を並べて、オーガニックのコスメ作りを学ぶ講座" width="1000" height="637" loading="lazy" decoding="async"></figure></div><p class="pv-cap">ドイツ・ビオホテルでの講座</p>
 
 
 <section class="alt" id="why">
@@ -432,8 +440,8 @@ footer .sns a{font-weight:500}
       <h2 class="sec">なぜ、お客さまを教育する起業家は恵まれるのか？</h2>
     </div>
     <div class="core-lead"><p>お客さまとの出会いが仲間との出会いにつながり、思いがけない仕事のチャンスが訪れる。人も、お金も、チャンスも集まってくる背景には、教育を土台とした一つの流れがあります。</p></div>
-    <ul class="reasons core"><li><h3 class="nobx"><b class="rn">1</b><span class="sp">　</span><span class="tx">まず、自分自身が学ぶ。</span></h3><p>自分が扱っている商品やサービスの価値を、どこまで自分の言葉で説明できるでしょうか？</p><p>まず大切なのは、自分自身が納得できる知識を得ることです。自分が深く理解しているからこそ、自信を持ってお客さまに伝えられるようになります。</p></li><li><h3 class="nobx"><b class="rn">2</b><span class="sp">　</span><span class="tx">「伝える」から「伝わる」へ。</span></h3><p>お客さまを教育するとは、知識を一方的に伝えることではありません。お客さまが何を理解し、何に疑問を持っているのかを確かめながら伝えることです。</p><p>お客さまが商品の本当の価値を知ったとき、「これが欲しい」「この人から買いたい」という気持ちが生まれます。</p></li><li><h3 class="nobx"><b class="rn">3</b><span class="sp">　</span><span class="tx">教育は、ビジネスのすべての土台になる。</span></h3><p>あなたの知識や考え方に共感したお客さまは、あなた自身を応援したくなります。</p><p>お客さまだけでなく、取引先や一緒に働く仲間も同じです。あなたが大切にしている思想や志に共感する人とのつながりから、新しい仕事やチャンスが生まれていきます。</p></li><li><h3 class="nobx"><b class="rn">4</b><span class="sp">　</span><span class="tx">AI時代だからこそ、知識がものをいう。</span></h3><p>誰もが簡単に情報を得られる時代だからこそ、「何を買うか」だけでなく「誰から買うか」が大切になります。</p><p>お客さまとの信頼関係や小さなコミュニティを育てるためにも、自分の専門分野について誰よりも深く学び、知識を更新し続けることが大切です。</p></li><li><h3 class="nobx"><b class="rn">5</b><span class="sp">　</span><span class="tx">人が集まる方法を探すより、人が集まる自分になる。</span></h3><p>自分の器以上のビジネスはできないと、私は考えています。</p><p>自分自身が学び、その知識を人のために活かし続ける。そんな起業家の思いや志に共感し、人が集まり、そこから新しい可能性が広がっていきます。</p></li></ul>
-    <div class="core-end"><p>お客さまを教育する起業家になるための第一歩は、あなた自身がオーガニックの本質を学ぶことです。</p></div>
+    <ul class="reasons core"><li><h3 class="nobx"><b class="rn">1</b><span class="sp">　</span><span class="tx">まず、自分自身が学ぶ。</span></h3><p>自分が扱っている商品やサービスの価値を、どこまで自分の言葉で説明できるでしょうか？</p><p>まず大切なのは、自分自身が納得できる知識を得ることです。自分が深く理解しているからこそ、自信を持ってお客さまに伝えられるようになります。</p></li><li><h3 class="nobx"><b class="rn">2</b><span class="sp">　</span><span class="tx">「伝える」から「伝わる」へ。</span></h3><p>お客さまを教育するとは、知識を一方的に伝えることではありません。お客さまが何を理解し、何に疑問を持っているのかを確かめながら伝えることです。</p><p>お客さまが商品の本当の価値を知ったとき、「これが欲しい」「この人から買いたい」という気持ちが生まれます。</p></li><li><h3 class="nobx"><b class="rn">3</b><span class="sp">　</span><span class="tx">教育は、ビジネスのすべての土台になる。</span></h3><p>あなたの知識や考え方に共感したお客さまは、あなた自身を応援したくなります。</p><p>お客さまだけでなく、取引先や一緒に働く仲間も同じです。あなたが大切にしている思想や志に共感する人とのつながりから、新しい仕事やチャンスが生まれていきます。</p></li><li><h3 class="nobx"><b class="rn">4</b><span class="sp">　</span><span class="tx">AI時代だからこそ、確かな知識がものをいう。</span></h3><p>誰もが簡単に情報を得られる時代だからこそ、「何を買うか」だけでなく「誰から買うか」が大切になります。</p><p>お客さまとの信頼関係や小さなコミュニティを育てるためにも、自分の専門分野について誰よりも深く学び、知識を更新し続けることが大切です。</p></li><li><h3 class="nobx"><b class="rn">5</b><span class="sp">　</span><span class="tx">人が集まる方法を探すより、人が集まる自分になる。</span></h3><p>自分の器以上のビジネスはできないと、私は考えています。</p><p>自分自身が学び、その知識を人のために活かし続ける。そんな起業家の思いや志に共感し、人が集まり、そこから新しい可能性が広がっていきます。</p></li></ul>
+    <div class="core-end"><p>お客さまにオーガニックの価値を伝えるために、まずはあなた自身がその本質を学びましょう。</p></div>
   </div>
 </section>
 
